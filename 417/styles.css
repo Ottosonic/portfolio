@@ -36,11 +36,11 @@ article, aside {
 }
 article.beg {
   grid-column: 1 / span 2;
-  background-color: #81c8e8;
+  background-color: #e5e5e5;
 }
 article.end {
   grid-column: 2 / span 2;
-  background-color: #81c8e8;
+  background-color: #e5e5e5;
 }
 aside.beg {
   grid-column: 3 / span 1;
@@ -49,6 +49,17 @@ aside.beg {
 aside.end {
   grid-column: 1 / span 1;
   background-color: #efc688;
+}
+article.full {
+  grid-column: 1 / span 3;
+  background-color: #e5e5e5;
+}
+.circle {
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  width: 9em;
+  height: 9em;
+  float: left;
 }
 @media screen and (max-width: 600px) {
 article.beg {
