@@ -1,8 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
   background: #F2F2F2;
   font-family: 'Roboto', serif;
+  background-image: url("https://geekandsundry.com/wp-content/uploads/2016/06/CRposter.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header {
+  background-color: #F2F2F2;
 }
 h1 {
   font-family: 'Roboto', serif;
@@ -10,8 +15,15 @@ h1 {
   width: 70%;
 }
 .title {
-  margin: 2.5em 0 3em 5%;
+  margin: 2.5em 0 0 5%;
+  padding-bottom: 2em;
+}
+#sub{
   width: 50%;
+  font-family: 'Roboto Mono', 'monospace';
+  font-size: 20px;
+  line-height: 30px;
+  text-indent: 0;
 }
 /*main styles*/
 main {
@@ -30,11 +42,6 @@ h2 {
 p {
   margin-top: 10px;
   text-indent: .7em;
-}
-span {
-  font-family: 'Roboto Mono', 'monospace';
-  font-size: 20px;
-  line-height: 30px;
 }
 article, aside {
   padding: 15px;
@@ -66,6 +73,11 @@ article.full {
   width: 9em;
   height: 9em;
   float: left;
+}
+.filler {
+  background-color: #F2F2F2;
+  height: 15em;
+  width: 100%;
 }
 @media screen and (max-width: 600px) {
 article.beg {
@@ -134,6 +146,7 @@ footer {
   text-align: center;
   color: #898989;
   padding: 4px;
+  background-color: #F2F2F2;
 }
 @media screen and (min-width: 600px) {
 nav li {
