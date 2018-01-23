@@ -1,14 +1,67 @@
-p {
+body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+}
+.hidden {
+  display: none;
 }
 header {
-  background-color: cyan;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner.jpg);
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 5% 10% auto 10% 5%;
+  grid-template-rows: 13em auto auto;
 }
+header img {
+  grid-column: 3 / span 1;
+  grid-row: 1;
+  height: 10em;
+  width: auto;
+  margin: auto;
+  border-radius: 50%;
+}
+header h2 {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+header h2 span {
+  color: #FFCE07;
+  text-align: center;
+}
+header div {
+  grid-column: 3 / span 1;
+  grid-row: 3;
+  text-align: center;
+  margin: 2em auto;
+}
+header div a:link {
+    border: 3.5px solid #FFCE07;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: 25px;
+    -webkit-transition: padding .6s, background-color .5s, color .3s;
+    transition: padding .6s, background-color .5s, color .3s;
+}
+header div a:hover {
+  padding: .5em 2em;
+  background-color: #FFCE07;
+  color: black;
+}
+a:visited {
+  color: #FFFFFF;
+  border-color: #FFCE07;
+}
+
 main {
-  background-color: pink;
+  background-color: ;
 }
 footer {
-  background-color: orange;
+  background-color: ;
 }
