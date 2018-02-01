@@ -5,7 +5,7 @@
     <title>Critical Role!</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,400i,700" rel="stylesheet">
     <script src="modernizr.custom.05819.js"></script>
 <!--
 JavaScript 6th Edition
@@ -31,7 +31,7 @@ Filename: trunk.html
         </nav>
         <div class="title">
           <h1>Critical Role</h1>
-          <p id="sub">A look into the second season of a role-playing game, live-streamed by some nerdy voice actors.</p>
+          <p id="sub">A look into a Dungeons & Dragons game, live-streamed by some nerdy voice actors.</p>
         </div>
       </header>
       <main>
@@ -43,25 +43,40 @@ Filename: trunk.html
           <h2>The cast.</h2>
           <p>The cast of Critical Role includes Matthew Mercer, Taliesin Jaffe, Liam O'Brien, Marisha Ray, Laura Bailey, Travis Willingham, Sam Riegel, and Ashley Johnson 	Ashley Johnson.</p>
         </aside>
-        <aside class="beg">
-          <h2>This is an aside.</h2>
-        </aside>
-        <article class="end">
-          <h2>This is an article.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
         <article class="full">
-          <h2>This is a really big article.</h2>
-          <img src="https://vignette.wikia.nocookie.net/criticalrole/images/e/ea/Vox_Machina_Cast_50th_episode-CgnKzrMWwAAPoaz.jpg/revision/latest/zoom-crop/width/320/height/320?cb=20160424171303" alt="The cast" class="circle">
-          <p>Images will look like this.</p>
+          <h2>What is Dungeons & Dragons?</h2>
+          <!--<img src="https://vignette.wikia.nocookie.net/criticalrole/images/e/ea/Vox_Machina_Cast_50th_episode-CgnKzrMWwAAPoaz.jpg/revision/latest/zoom-crop/width/320/height/320?cb=20160424171303" alt="The cast" class="circle">-->
+          <p>The core of D&D is storytelling. You and your friends tell a story together, guiding your heroes through quests for treasure, battles with deadly foes, daring rescues, courtly intrigue, and much more. You can also explore the world of Dungeons & Dragons through any of the novels written by its fantasy authors, as well as engaging board games and immersive video games. All of these stories are part of D&D.
+          </p>
+          <p>The first Dungeons & Dragons game was played back when Gary Gygax and Dave Arneson chose to personalize the massive battles of their fantasy wargames with the exploits of individual heroes. This inspiration became the first fantasy roleplaying game, in which players are characters in an ongoing fantasy story. This new kind of game has become immensely popular over the years, and D&D has grown to include many new ways to vividly experience worlds of heroic fantasy.
+          <a href="http://dnd.wizards.com/dungeons-and-dragons/what-is-dd">Source</a></p>
         </article>
+        <aside id="time">
+          <h2>Meet the cast.</h2>
+          <p>You can get the chance to meet the members of Critical Role at this year's VidCon. Don't miss this amazing opportunity and book your tickets bellow!</p>
+          <form class="VidConTickets" method="post">
+            <label for="adult">
+              Adult ($40):
+              <input id="adult" min="1" value="1" type="number">
+            </label>
+            <label for="VIP">
+              VIP ($70):
+              <input id="VIP" min="0" value="0" type="number">
+            </label>
+            <div>
+              Total price:
+              <p><span id="totalPrice"></span></p>
+            </div>
+            <button id="subButton" type="submit">
+              <span>Add to cart</span>
+            </button>
+          </form>
+        </aside>
       </main>
-      <section class="filler">
-        
-      </section>
       <footer>
         <small>&copy; Nicholas Trunkey, educational use only.</small>
       </footer>
     </div>
+    <script src="nt.js"></script>
   </body>
 </html>

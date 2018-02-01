@@ -39,7 +39,7 @@ header div {
   margin: 2em auto;
 }
 header div a:link {
-    border: 3.5px solid #FFCE07;
+    border: 3px solid #FFCE07;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.2em;
@@ -58,9 +58,60 @@ a:visited {
   color: #FFFFFF;
   border-color: #FFCE07;
 }
-
 main {
-  background-color: ;
+  background-color: #EAEAEA;
+  color: #4A494A;
+}
+main h2, main h4 {
+  color: #282828;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+main h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+main section {
+  padding: 1em 5%;
+}
+main #work {
+  background-color: #D8D8D8;
+}
+#skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+#skills h2 {
+  order: 1;
+  width: 100%;
+  margin-bottom: 1em;
+}
+div.des {
+  order: 2;
+  width: 40%;
+}
+div.dev {
+  order: 3;
+  width: 40%;
+}
+#skills h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+.des h3 {
+  color: #3CA6DE;
+}
+.dev h3 {
+  color: #F4791F;
+}
+#skills p {
+  text-align: center;
+  font-size: #4A4A4A;
 }
 footer {
   background-color: ;

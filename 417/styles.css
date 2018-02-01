@@ -8,9 +8,10 @@ body {
 }
 header {
   background-color: #F2F2F2;
+  box-shadow:
 }
 h1 {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 3em;
   width: 70%;
 }
@@ -19,29 +20,36 @@ h1 {
   padding-bottom: 2em;
 }
 #sub{
-  width: 50%;
-  font-family: 'Roboto Mono', 'monospace';
+  width: 70%;
+  font-family: 'Roboto', 'monospace';
   font-size: 20px;
-  line-height: 30px;
   text-indent: 0;
+  margin-top: 0;
 }
 /*main styles*/
 main {
   display: grid;
-  margin: 0 10%;
+  padding: 0 10%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
   "articleA articleA asideA"
-  "asideB articleB articleB"
-  "articleC articleC articleC";
+  "articleB articleB articleB"
+  "asideC asideC .";
+  /*-moz-box-shadow:    inset 0 0 4px #000000;
+  -webkit-box-shadow: inset 0 0 4px #000000;*/
+  box-shadow: inset 0px -8px 8px -11px #000000, inset 0px 8px 8px -11px #000000;
 }
 h2 {
   font-size: 28px;
+  font-weight: bold;
 }
 p {
   margin-top: 10px;
   text-indent: .7em;
+}
+p a {
+  font-style: italic;
 }
 article, aside {
   padding: 15px;
@@ -51,21 +59,17 @@ article.beg {
   grid-area: articleA;
   background-color: #e5e5e5;
 }
-article.end {
-  grid-area: articleB;
-  background-color: #e5e5e5;
-}
-aside.beg {
-  grid-area: asideB;
-  background-color: #efc688;
-}
 aside.end {
   grid-area: asideA;
   background-color: #efc688;
 }
 article.full {
-  grid-area: articleC;
+  grid-area: articleB;
   background-color: #e5e5e5;
+}
+aside#time {
+  grid-area: asideC;
+  background-color: #efc688;
 }
 .circle {
   -webkit-clip-path: circle(50% at 50% 50%);
@@ -79,24 +83,40 @@ article.full {
   height: 15em;
   width: 100%;
 }
+aside#time form {
+  background-color: #e5e5e5;
+  margin: 5px;
+  padding: 1em;
+}
+aside#time form label{
+  display: block;
+}
 @media screen and (max-width: 600px) {
+main {
+  grid-template-areas:
+  "articleA"
+  "asideA"
+  "articleB"
+  "asideC";
+  padding: 0;
+}
 article.beg {
-  grid-column: 1 / span 3;
+  grid-column: 1 / 4;
   margin: 10px;
   padding: 5px;
 }
-article.end {
-  grid-column: 1 / span 3;
-  margin: 10px;
-  padding: 5px;
-}
-aside.beg {
-  grid-column: 1 / span 3;
+article.full {
+  grid-column: 1 / 4;
   margin: 10px;
   padding: 5px;
 }
 aside.end {
-  grid-column: 1 / span 3;
+  grid-column: 1 / 4;
+  margin: 10px;
+  padding: 5px;
+}
+aside#time {
+  grid-column: 1 / 4;
   margin: 10px;
   padding: 5px;
 }
