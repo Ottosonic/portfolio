@@ -39,15 +39,15 @@ header div {
   margin: 2em auto;
 }
 header div a:link {
-    border: 3px solid #FFCE07;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: .5em 1em;
-    border-radius: 25px;
-    -webkit-transition: padding .6s, background-color .5s, color .3s;
-    transition: padding .6s, background-color .5s, color .3s;
+  border: 3px solid #FFCE07;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .5em 1em;
+  border-radius: 25px;
+  -webkit-transition: padding .6s, background-color .5s, color .3s;
+  transition: padding .6s, background-color .5s, color .3s;
 }
 header div a:hover {
   padding: .5em 2em;
@@ -73,7 +73,7 @@ main h4 {
   font-weight: 400;
 }
 main section {
-  padding: 1em 5%;
+  padding: 1em 10%;
 }
 main #work {
   background-color: #D8D8D8;
@@ -112,6 +112,122 @@ div.dev {
 #skills p {
   text-align: center;
   font-size: #4A4A4A;
+}
+#work h4 {
+  margin-bottom: 1em;
+}
+#thymeToEat {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 30em; auto auto auto auto;
+  grid-template-areas:
+  "image image"
+  "title ."
+  "subTitle ."
+  "blurb blurb"
+  "button .";
+}
+#thymeToEat img {
+  grid-area: image;
+}
+#thymeToEat h3 {
+  grid-area: title;
+  color: #282727;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 1em;
+}
+#thymeToEat h5 {
+  grid-area: subTitle;
+  color: #3BA6DE;
+}
+#thymeToEat p {
+  grid-area: blurb;
+  margin-top: 1em;
+}
+#thymeToEat .viewButton {
+  grid-area: button;
+  margin-top: 1em;
+  padding: 1em 0;
+}
+#thymeToEat .viewButton a:link {
+  border: 3px solid #E97220;
+  color: #231F20;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .5em 1em;
+  border-radius: 25px;
+  -webkit-transition: padding .6s, background-color .5s, color .3s;
+  transition: padding .6s, background-color .5s, color .3s;
+}
+#thymeToEat .viewButton a:hover {
+  padding: .5em 2em;
+  background-color: #E97220;
+  color: ;
+}
+#thymeToEat .viewButton a:visited {
+  color: #231F20;
+  border-color: #E97220;
+}
+#doubleT {
+  margin: 2em 0;
+  padding-top: 1em;
+}
+#doubleT {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 30em; auto auto auto auto;
+  grid-template-areas:
+  "image image"
+  "title ."
+  "subTitle ."
+  "blurb blurb"
+  "button .";
+}
+#doubleT img {
+  grid-area: image;
+}
+#doubleT h3 {
+  grid-area: title;
+  color: #282727;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 1em;
+}
+#doubleT h5 {
+  grid-area: subTitle;
+  color: #3BA6DE;
+}
+#doubleT p {
+  grid-area: blurb;
+  margin-top: 1em;
+
+}
+#doubleT .viewButton {
+  grid-area: button;
+  margin-top: 1em;
+  padding: 1em 0;
+}
+#doubleT .viewButton a:link {
+  border: 3px solid #E97220;
+  color: #231F20;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .5em 1em;
+  border-radius: 25px;
+  -webkit-transition: padding .6s, background-color .5s, color .3s;
+  transition: padding .6s, background-color .5s, color .3s;
+}
+#doubleT .viewButton a:hover {
+  padding: .5em 2em;
+  background-color: #E97220;
+  color: ;
+}
+#doubleT .viewButton a:visited {
+  color: #231F20;
+  border-color: #E97220;
 }
 footer {
   background-color: ;
