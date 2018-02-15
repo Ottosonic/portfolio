@@ -51,7 +51,7 @@ Filename: trunk.html
           <p>The first Dungeons & Dragons game was played back when Gary Gygax and Dave Arneson chose to personalize the massive battles of their fantasy wargames with the exploits of individual heroes. This inspiration became the first fantasy roleplaying game, in which players are characters in an ongoing fantasy story. This new kind of game has become immensely popular over the years, and D&D has grown to include many new ways to vividly experience worlds of heroic fantasy.
           <a href="http://dnd.wizards.com/dungeons-and-dragons/what-is-dd">Source</a></p>
         </article>
-        <aside id="time">
+        <aside id="tickets">
           <h2>Meet the cast.</h2>
           <p>You can get the chance to meet the members of Critical Role at this year's VidCon. Don't miss this amazing opportunity and book your tickets bellow!</p>
           <form class="VidConTickets" method="post">
@@ -72,6 +72,21 @@ Filename: trunk.html
             </button>
           </form>
         </aside>
+        <article id="time">
+          <h2>Is it time for Critical Role?</h2>
+          <p>Is it Thursday yet?</p>
+          <span id="dayOfWeek">
+            <script>
+
+              var today = new Date();
+              if (today.getDay() === 4) {
+                document.write("Today is Thursday! Watch CR at 7pm tonight!");
+              } else {
+                document.write("Nope! Today is not Thursday.");
+              }
+            </script>
+          </span>
+        </article>
       </main>
       <footer>
         <small>&copy; Nicholas Trunkey, educational use only.</small>
