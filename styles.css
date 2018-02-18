@@ -100,8 +100,9 @@ div.dev {
 }
 #skills h3 {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: bolder;
   text-align: center;
+  margin-bottom: .5em;
 }
 .des h3 {
   color: #3CA6DE;
