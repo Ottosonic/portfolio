@@ -15,6 +15,18 @@ function calcTickets() {
   document.getElementById("totalPrice").innerHTML = "$" + totalCost;
 }
 
+function checkTickets() {
+  try {
+    if (document.getElementById("adult").value <= 0 && document.getElementById("VIP").value <= 0) {
+      throw "Please enter at least one ticket.";
+    }
+  }
+  catch(checkError) {
+    window.alert(checkError);
+    return false;
+  }
+}
+
 //checks to reset the forms
 function resetForm() {
   document.getElementById("adult").value = 1;
@@ -27,6 +39,7 @@ function resetForm() {
 function eventListener() {
   document.getElementById("adult").addEventListener("change", calcTickets, false);
   document.getElementById("VIP").addEventListener("change", calcTickets, false);
+  document.getElementById("subButton").addEventListener("click", checkTickets, false);
 }
 
 window.addEventListener("load", resetForm, false);
