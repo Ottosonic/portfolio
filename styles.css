@@ -38,7 +38,7 @@ header div {
   text-align: center;
   margin: 2em auto;
 }
-header div a:link {
+.contactButton a:link {
   border: 3px solid #FFCE07;
   color: #FFFFFF;
   text-decoration: none;
@@ -49,10 +49,13 @@ header div a:link {
   -webkit-transition: padding .6s, background-color .5s, color .3s;
   transition: padding .6s, background-color .5s, color .3s;
 }
-header div a:hover {
+.contactButton a:hover {
   padding: .5em 2em;
   background-color: #FFCE07;
   color: black;
+}
+footer .contactButton {
+  height: 2em;
 }
 a:visited {
   color: #FFFFFF;
@@ -205,12 +208,12 @@ div.dev {
   margin-top: 1em;
 
 }
-#doubleT .viewButton {
+#doubleT .viewButton, .otherButton {
   grid-area: button;
   margin-top: 1em;
   padding: 1em 0;
 }
-#doubleT .viewButton a:link {
+#doubleT .viewButton a:link, .otherButton a:link {
   border: 3px solid #E97220;
   color: #231F20;
   text-decoration: none;
@@ -221,12 +224,12 @@ div.dev {
   -webkit-transition: padding .6s, background-color .5s, color .3s;
   transition: padding .6s, background-color .5s, color .3s;
 }
-#doubleT .viewButton a:hover {
+#doubleT .viewButton a:hover, .otherButton a:hover {
   padding: .5em 2em;
   background-color: #E97220;
   color: ;
 }
-#doubleT .viewButton a:visited {
+#doubleT .viewButton a:visited, .otherButton a:visited {
   color: #231F20;
   border-color: #E97220;
 }
