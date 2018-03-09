@@ -125,19 +125,17 @@ div.dev {
 }
 #thymeToEat {
   display: grid;
-  grid-template-columns: 45% 55%;
-  grid-template-rows: 30em; auto auto auto auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 30em;
   grid-template-areas:
-  "image image"
-  "title ."
-  "subTitle ."
-  "blurb blurb"
-  "button .";
+  "image"
+  "title"
+  "subTitle"
+  "blurb"
+  "button";
 }
 #thymeToEat img {
   grid-area: image;
-  width: 400px;
-  height: 400px;
 }
 #thymeToEat h3 {
   grid-area: title;
@@ -185,19 +183,17 @@ div.dev {
 }
 #doubleT {
   display: grid;
-  grid-template-columns: 45% 55%;
-  grid-template-rows: 30em; auto auto auto auto;
+  grid-template-columns: 100%;
+  grid-template-rows: 30em;
   grid-template-areas:
-  "image image"
-  "title ."
-  "subTitle ."
-  "blurb blurb"
-  "button .";
+  "image"
+  "title"
+  "subTitle"
+  "blurb"
+  "button";
 }
 #doubleT img {
   grid-area: image;
-  width: 400px;
-  height: 400px;
 }
 #doubleT h3 {
   grid-area: title;
@@ -305,6 +301,11 @@ div.dev {
 }
 #otherButtons a {
   margin: 0 1em;
+}
+@media only screen and (max-width: 450px){
+  doubleT img {
+    width: 40%;
+  }
 }
 @media only screen and (min-width: 1017px) {
   #work {
