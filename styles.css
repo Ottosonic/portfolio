@@ -126,7 +126,7 @@ div.dev {
 #thymeToEat {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30em;
+  grid-template-rows: auto;
   grid-template-areas:
   "image"
   "title"
@@ -136,6 +136,7 @@ div.dev {
 }
 #thymeToEat img {
   grid-area: image;
+  width: 100%;
 }
 #thymeToEat h3 {
   grid-area: title;
@@ -184,7 +185,7 @@ div.dev {
 #doubleT {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30em;
+  grid-template-rows: auto;
   grid-template-areas:
   "image"
   "title"
@@ -194,6 +195,7 @@ div.dev {
 }
 #doubleT img {
   grid-area: image;
+  width: 100%;
 }
 #doubleT h3 {
   grid-area: title;
@@ -301,11 +303,6 @@ div.dev {
 }
 #otherButtons a {
   margin: 0 1em;
-}
-@media only screen and (max-width: 450px){
-  doubleT img {
-    width: 40%;
-  }
 }
 @media only screen and (min-width: 1017px) {
   #work {
