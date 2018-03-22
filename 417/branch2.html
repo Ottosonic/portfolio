@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,400i,700" rel="stylesheet">
-    <script type="text/javascript">
+    <script type="modernizr.custom.05819.js">
 
     </script>
   </head>
@@ -16,18 +16,43 @@
         <nav>
           <ul>
             <li><a href="trunk.html">Home</a></li>
-            <li><a href="branch2.html" class="active">Setting</a></li>
+            <li><a href="branch2.html" class="active">About</a></li>
             <li><a href="branch3.html">Players</a></li>
             <li><a href="branch4.html">Dungeon Master</a></li>
           </ul>
         </nav>
         <div class="title">
-          <h1>Critical Role, Campaign 2</h1>
-          <span>A look into a role-playing game, run by some nerdy voice actors.</span>
+          <h1>Critical Role</h1>
+          <p id="sub">A look into a Dungeons & Dragons game, live-streamed by some nerdy voice actors.</p>
         </div>
       </header>
       <main>
-
+        <div>
+          <h2>Web Security</h2>
+          <h3>Collected Data</h3>
+          <p>We collect basic data from the user accessing this site. This comes in the form of things like the version of web browser the user is using,
+          the name of the browser, the operating platform, the location of the user (given it is ennabled,) and the dimensions of the screen size.</p>
+          <p>Here is some data based on your computer:</p>
+          <h5></h5>
+          <h5></h5>
+          <h5></h5>
+          <h5></h5>
+          <h5></h5>
+          <h5></h5>
+          <p>Here are some articles to help you stay safe while browsing the web:</p>
+          <h4><a href="https://securingtomorrow.mcafee.com/consumer/consumer-threat-notices/10-tips-stay-safe-online/">https://securingtomorrow.mcafee.com/consumer/consumer-threat-notices/10-tips-stay-safe-online/</a></h4>
+          <h4><a href="https://www.nypl.org/help/about-nypl/legal-notices/internet-safety-tips"></a>https://www.nypl.org/help/about-nypl/legal-notices/internet-safety-tips</h4>
+          <h4><a href="https://usa.kaspersky.com/resource-center/preemptive-safety/top-10-internet-safety-rules-and-what-not-to-do-online"></a>https://usa.kaspersky.com/resource-center/preemptive-safety/top-10-internet-safety-rules-and-what-not-to-do-online</h4>
+          <script>
+          "use strict";
+            document.getElementsByTagName("h5")[0].innerHTML = "Web browser name: " + navigator.appName;
+            document.getElementsByTagName("h5")[1].innerHTML = "Web browser version: " + navigator.appVersion;
+            document.getElementsByTagName("h5")[2].innerHTML = "Operating platform: " + navigator.platform;
+            document.getElementsByTagName("h5")[3].innerHTML = "Location: " + navigator.geolocation;
+            document.getElementsByTagName("h5")[4].innerHTML = "Online: " + navigator.onLine;
+            document.getElementsByTagName("h5")[5].innerHTML = "Available screen width: " + screen.availWidth;
+          </script>
+        </div>
       </main>
       <footer>
         <p>&copy; Nicholas Trunkey, educational use only.</p>
