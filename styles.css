@@ -1,5 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .hidden {
   display: none;
@@ -82,11 +84,12 @@ main #work {
   background-color: #D8D8D8;
 }
 #work h2 {
-  margin-bottom: .8em;
+  margin: 0 0 .8em 0;
+  font-size: 1.8em;
 }
 #skills {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: space-around;
   align-items: flex-start;
   align-content: center;
@@ -98,11 +101,12 @@ main #work {
 }
 div.des {
   order: 2;
-  width: 40%;
+  padding-right: 1em;
 }
 div.dev {
   order: 3;
-  width: 40%;
+  padding-left: 1em;
+
 }
 #skills h3 {
   font-size: 1.5em;
@@ -143,15 +147,16 @@ div.dev {
   color: #282727;
   font-weight: bold;
   font-size: 28px;
-  margin-top: 1em;
+  margin: 1em 0 0 0;
 }
 #thymeToEat h5 {
   grid-area: subTitle;
   color: #3BA6DE;
+  margin: 0;
 }
 #thymeToEat p {
   grid-area: blurb;
-  margin-top: 1em;
+  margin: 1em 0 0 0;
 }
 #thymeToEat .viewButton {
   grid-area: button;
@@ -202,16 +207,16 @@ div.dev {
   color: #282727;
   font-weight: bold;
   font-size: 28px;
-  margin-top: 1em;
+  margin: 1em 0 0 0;
 }
 #doubleT h5 {
   grid-area: subTitle;
   color: #3BA6DE;
+  margin: 0;
 }
 #doubleT p {
   grid-area: blurb;
-  margin-top: 1em;
-
+  margin: 1em 0 0 0;
 }
 #doubleT .viewButton{
   grid-area: button;
@@ -294,17 +299,23 @@ div.dev {
   font-size: 1.2em;
   color: #D8D8D8;
 }
-#otherSkills {
-  display: grid;
-  grid-template:
+#otherSkills h2, #otherSkills h4{
+  margin: 0;
 }
 #otherButtons {
-  margin: 1em auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
 #otherButtons a {
-  margin: 0 1em;
+  margin: 1em 1em 0 1em;
 }
 @media only screen and (min-width: 1017px) {
+  #skills {
+  flex-flow: row;
+  }
   #work {
     display: grid;
     grid-template-columns: auto auto;
@@ -320,13 +331,15 @@ div.dev {
     justify-self: center;
     display: grid;
     grid-template-columns: 25em;
-    grid-template-rows: 30em;
+    grid-template-rows: auto;
     grid-template-areas:
     "image"
     "title"
     "subTitle"
     "blurb"
     "button";
+    margin: 0;
+    padding: 0;
   }
   #thymeToEat h3 {
     margin-top: 0;
@@ -337,7 +350,7 @@ div.dev {
     justify-self: center;
     display: grid;
     grid-template-columns: 25em;
-    grid-template-rows: 30em;
+    grid-template-rows: auto;
     grid-template-areas:
     "image"
     "title"
