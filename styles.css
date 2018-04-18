@@ -233,15 +233,26 @@ div.dev {
 #otherSkills h2, #otherSkills h4{
   margin: 0;
 }
-#otherButtons {
+#otherLinks {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
   align-content: center;
 }
-#otherButtons a {
+#otherLinks a {
   margin: 1em 1em 0 1em;
+  color: #4A494A;
+  font-weight: bold;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: 25px;
+  -webkit-transition: background-color .5s, color .3s;
+  transition: background-color .5s, color .3s;
+}
+#otherLinks a:hover {
+  background-color: #4A494A;
+  color: #D8D8D8;
 }
 @media only screen and (min-width: 1017px) {
   #skills {
