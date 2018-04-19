@@ -16,18 +16,32 @@
         <nav>
           <ul>
             <li><a href="trunk.html">Home</a></li>
-            <li><a href="branch2.html">Setting</a></li>
-            <li><a href="branch3.html" class="active">Players</a></li>
-            <li><a href="branch4.html">Dungeon Master</a></li>
+            <li><a href="branch2.html">Web Security</a></li>
+            <li><a href="branch3.html" class="active">Is It Thursday?</a></li>
+            <li><a href="branch4.html">Tools</a></li>
           </ul>
         </nav>
         <div class="title">
-          <h1>Critical Role, Campaign 2</h1>
-          <span>A look into a role-playing game, run by some nerdy voice actors.</span>
+          <h1>Critical Role</h1>
+          <p id="sub">A look into a Dungeons & Dragons game, live-streamed by some nerdy voice actors.</p>
         </div>
       </header>
-      <main>
+      <main class="normal">
+        <article class="full">
+          <h2>Is it time for Critical Role?</h2>
+          <p>Is it Thursday yet?</p>
+          <span id="dayOfWeek">
+            <script>
 
+              var today = new Date();
+              if (today.getDay() === 4) {
+                document.write("Today is Thursday! Watch CR at 7pm tonight!");
+              } else {
+                document.write("Nope! Today is not Thursday.");
+              }
+            </script>
+          </span>
+        </article>
       </main>
       <footer>
         <p>&copy; Nicholas Trunkey, educational use only.</p>

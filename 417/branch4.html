@@ -16,22 +16,67 @@
         <nav>
           <ul>
             <li><a href="trunk.html">Home</a></li>
-            <li><a href="branch2.html">Setting</a></li>
-            <li><a href="branch3.html">Players</a></li>
-            <li><a href="branch4.html" class="active">Dungeon Master</a></li>
+            <li><a href="branch2.html">Web Secutity</a></li>
+            <li><a href="branch3.html">Is It Thursday?</a></li>
+            <li><a href="branch4.html" class="active">Tools</a></li>
           </ul>
         </nav>
         <div class="title">
-          <h1>Critical Role, Campaign 2</h1>
-          <span>A look into a role-playing game, run by some nerdy voice actors.</span>
+          <h1>Critical Role</h1>
+          <p id="sub">A look into a Dungeons & Dragons game, live-streamed by some nerdy voice actors.</p>
         </div>
       </header>
-      <main>
-
+      <main class="normal">
+        <article class="beg">
+          <h3>
+            Elapsed Time:
+          </h3>
+          <p>
+            Pick a date and this will tell you how much time has passed. For instance: try 4/16/2015, this is how long it's been since the first Critical Role stream!
+          </p> <br>
+          <form>
+            <input id="date" type="date">
+            <input id="submit" type="submit">
+          </form>
+          <div id="elapsedTime"></div>
+        </article>
       </main>
       <footer>
         <p>&copy; Nicholas Trunkey, educational use only.</p>
       </footer>
-    </div>
+    <script>
+      function elapsedTimeCounter(event) {
+        event.preventDefault();
+
+        var dateStart = document.getElementById("date").value;
+        var date = new Date(dateStart);
+        var fixedDate = date.getTime() + date.getTimezoneOffset() * 1000 * 60;
+        var currentDate = new Date();
+        var elapsedTime = currentDate - fixedDate;
+
+        var InDays = 24 * 60 * 60 * 1000;
+        var InMonths = InDays * 31;
+        var InYears = InMonths * 12;
+
+        var year = Math.floor(elapsedTime/InYears);
+        var month = Math.floor(elapsedTime/InMonths % 12);
+        var day = Math.floor(elapsedTime/InDays % 31);
+
+        if (isNaN(date)) {
+          alert("Please enter an actual date.");
+          return;
+        }
+
+        document.getElementById("elapsedTime").innerHTML = "It has been " + year + " years, " + month + " months, and " + day + " days."/*"Years: " + " " + year + " " + "Months: " + " " + month + " " + "Days: " + " " + day*/;
+      }
+
+      var submit = document.getElementById("submit");
+
+      if (submit.addEventListener) {
+        submit.addEventListener("click", elapsedTimeCounter, false);
+      } else if (window.attachEvent) {
+        submit.attachEvent("click", elapsedTimeCounter);
+      }
+    </script>
   </body>
 </html>

@@ -20,6 +20,11 @@ h4, h5 {
   font-size: 1.5em;
   width: 70%;
 }
+h6 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  font-weight: bold;
+}
 .title {
   margin: 2.5em 0 0 5%;
   padding-bottom: 2em;

@@ -1,5 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .hidden {
   display: none;
@@ -82,11 +84,12 @@ main #work {
   background-color: #D8D8D8;
 }
 #work h2 {
-  margin-bottom: .8em;
+  margin: 0 0 .8em 0;
+  font-size: 1.8em;
 }
 #skills {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: space-around;
   align-items: flex-start;
   align-content: center;
@@ -98,11 +101,9 @@ main #work {
 }
 div.des {
   order: 2;
-  width: 40%;
 }
 div.dev {
   order: 3;
-  width: 40%;
 }
 #skills h3 {
   font-size: 1.5em;
@@ -120,123 +121,58 @@ div.dev {
   text-align: center;
   font-size: #4A4A4A;
 }
+
+/*Recent Work Styles*/
 #work h4 {
   margin-bottom: 1em;
 }
-#thymeToEat {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "image"
-  "title"
-  "subTitle"
-  "blurb"
-  "button";
-}
-#thymeToEat img {
-  grid-area: image;
-  width: 100%;
-}
-#thymeToEat h3 {
-  grid-area: title;
-  color: #282727;
-  font-weight: bold;
-  font-size: 28px;
-  margin-top: 1em;
-}
-#thymeToEat h5 {
-  grid-area: subTitle;
-  color: #3BA6DE;
-}
-#thymeToEat p {
-  grid-area: blurb;
-  margin-top: 1em;
-}
-#thymeToEat .viewButton {
-  grid-area: button;
-  margin-top: 1em;
-  padding: 1em 0;
-}
-#thymeToEat .viewButton a:link {
-  border: 3px solid #E97220;
-  color: #231F20;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: .5em 1em;
-  border-radius: 25px;
-  -webkit-transition: padding .6s, background-color .5s, color .3s;
-  transition: padding .6s, background-color .5s, color .3s;
-}
-#thymeToEat .viewButton a:hover {
-  padding: .5em 2em;
-  background-color: #E97220;
-  color: ;
-}
-#thymeToEat .viewButton a:visited {
-  color: #231F20;
-  border-color: #E97220;
-}
-#doubleT {
-  margin: 2em 0;
-  padding-top: 1em;
-}
-#doubleT {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-  "image"
-  "title"
-  "subTitle"
-  "blurb"
-  "button";
-}
-#doubleT img {
-  grid-area: image;
-  width: 100%;
-}
-#doubleT h3 {
-  grid-area: title;
-  color: #282727;
-  font-weight: bold;
-  font-size: 28px;
-  margin-top: 1em;
-}
-#doubleT h5 {
-  grid-area: subTitle;
-  color: #3BA6DE;
-}
-#doubleT p {
-  grid-area: blurb;
-  margin-top: 1em;
 
-}
-#doubleT .viewButton{
-  grid-area: button;
+#recentWork img {
+  width: 100%;
   margin-top: 1em;
-  padding: 1em 0;
 }
-#doubleT .viewButton a:link{
-  border: 3px solid #E97220;
-  color: #231F20;
-  text-decoration: none;
-  font-size: 1.2em;
+#recentWork h3 {
+  color: #282727;
   font-weight: bold;
-  padding: .5em 1em;
-  border-radius: 25px;
-  -webkit-transition: padding .6s, background-color .5s, color .3s;
-  transition: padding .6s, background-color .5s, color .3s;
+  font-size: 28px;
+  margin: .2em 0 0 0;
 }
-#doubleT .viewButton a:hover {
-  padding: .5em 2em;
-  background-color: #E97220;
+#recentWork h5 {
+  color: #3BA6DE;
+  margin: 0;
 }
-#doubleT .viewButton a:visited {
-  color: #231F20;
-  border-color: #E97220;
+#recentWork p {
+  margin: 1em 0 0 0;
 }
+
+/*Recent Work Button styles*/
+  .viewButton {
+    grid-area: button;
+    margin: 1em 0;
+    padding: 1em 0;
+  }
+  .viewButton a:link {
+    border: 3px solid #E97220;
+    color: #231F20;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .5em 1em;
+    border-radius: 25px;
+    -webkit-transition: padding .6s, background-color .5s, color .3s;
+    transition: padding .6s, background-color .5s, color .3s;
+  }
+  .viewButton a:hover {
+    padding: .5em 2em;
+    background-color: #E97220;
+    color: ;
+  }
+  .viewButton a:visited {
+    color: #231F20;
+    border-color: #E97220;
+  }
+
+/*Footer styles*/
 #orangeFooter {
   display: grid;
   grid-template-rows: 2em 4em;
@@ -294,62 +230,83 @@ div.dev {
   font-size: 1.2em;
   color: #D8D8D8;
 }
-#otherSkills {
-  display: grid;
-  grid-template:
+#otherSkills h2, #otherSkills h4{
+  margin: 0;
 }
-#otherButtons {
-  margin: 1em auto;
+#otherLinks {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 }
-#otherButtons a {
-  margin: 0 1em;
+#otherLinks a {
+  margin: 1em 1em 0 1em;
+  color: #4A494A;
+  font-weight: bold;
+  text-decoration: none;
+  padding: .5em 1em;
+  border-radius: 25px;
+  -webkit-transition: background-color .5s, color .3s;
+  transition: background-color .5s, color .3s;
+}
+#otherLinks a:hover {
+  background-color: #4A494A;
+  color: #D8D8D8;
 }
 @media only screen and (min-width: 1017px) {
-  #work {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+  #skills {
+  flex-flow: row;
   }
-  #work h2 {
-    grid-column: span 2;
-    grid-row: 1;
-  }
-  #thymeToEat {
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: center;
+
+/*Recent Work Styles*/
+  #recentWork {
     display: grid;
-    grid-template-columns: 25em;
-    grid-template-rows: 30em;
+    grid-template-columns: 30em 30em;
+    grid-template-rows: auto;
+    justify-content: space-around;
     grid-template-areas:
-    "image"
-    "title"
-    "subTitle"
-    "blurb"
-    "button";
+    "imageL imageR"
+    "titleL titleR"
+    "subTitleL subTitleR"
+    "blurbL blurbR"
+    "buttonL buttonR";
   }
-  #thymeToEat h3 {
-    margin-top: 0;
+  #recentWork h3 {
+    margin: 1em 0 0 0;
   }
-  #doubleT {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-    display: grid;
-    grid-template-columns: 25em;
-    grid-template-rows: 30em;
-    grid-template-areas:
-    "image"
-    "title"
-    "subTitle"
-    "blurb"
-    "button";
-    margin: 0;
-    padding: 0;
+  #tTCiMG {
+    grid-area: imageL;
   }
-  #doubleT h3 {
-    margin-top: 0;
+  #tTCh3 {
+    grid-area: titleL;
   }
+  #tTCh5 {
+    grid-area: subTitleL;
+  }
+  #tTCp {
+    grid-area: blurbL;
+  }
+  #tTCButton {
+    grid-area: buttonL;
+  }
+  #diMG {
+    grid-area: imageR;
+  }
+  #dh3 {
+    grid-area: titleR;
+  }
+  #dh5 {
+    grid-area: subTitleR;
+  }
+  #dp {
+    grid-area: blurbR;
+  }
+  #dButton {
+    grid-area: buttonR;
+  }
+
+
   footer {
     display: grid;
     grid-template-columns: 50% 50%;
