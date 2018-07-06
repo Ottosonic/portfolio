@@ -7,7 +7,7 @@
  */
 var totalCost = 160;
 
-//add Adult and VIP tickets together.
+//add Adult and VIP tickets together
 function calcTickets() {
   var adu = document.getElementById("adult");
   var vips = document.getElementById("VIP");
@@ -15,6 +15,7 @@ function calcTickets() {
   document.getElementById("totalPrice").innerHTML = "$" + totalCost;
 }
 
+//Checking if feild is empty
 function checkTickets() {
   try {
     if (document.getElementById("adult").value <= 0 && document.getElementById("VIP").value <= 0) {

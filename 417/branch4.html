@@ -48,20 +48,26 @@
       function elapsedTimeCounter(event) {
         event.preventDefault();
 
+        //global variables
         var dateStart = document.getElementById("date").value;
         var date = new Date(dateStart);
         var fixedDate = date.getTime() + date.getTimezoneOffset() * 1000 * 60;
         var currentDate = new Date();
+
+        //currentDate does not take timeZone
         var elapsedTime = currentDate - fixedDate;
 
+        //breaks down into one number for construction
         var InDays = 24 * 60 * 60 * 1000;
         var InMonths = InDays * 31;
         var InYears = InMonths * 12;
 
+        //core construction, takes elapsedTime and devides into years, months, and days
         var year = Math.floor(elapsedTime/InYears);
         var month = Math.floor(elapsedTime/InMonths % 12);
         var day = Math.floor(elapsedTime/InDays % 31);
 
+        //checks for not a number
         if (isNaN(date)) {
           alert("Please enter an actual date.");
           return;
