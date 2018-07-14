@@ -91,7 +91,7 @@ header {
       rgba(243, 165, 54, .8),
       rgba(243, 165, 54, .8)
       ),
-    url('images/_MG_6938.jpg');
+    url('img/_MG_6938.jpg');
   grid-template-rows: repeat(2, 1fr);
 }
 header > *{
