@@ -36,7 +36,7 @@ label:focus {
   display: block;
   padding: 0;
   text-indent: -9999px;
-  background: rgba(243, 165, 54, 0) url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+  background: rgb(243, 165, 54) url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
   color: rgb(75, 75, 74);
 }
 .menu ul li > label {
@@ -52,6 +52,7 @@ label:focus {
 }
 .menu ul li a:hover, .menu ul li label:hover {
   color: #666;
+  text-decoration: underline;
 }
 
 /* hide inputs */
@@ -93,6 +94,7 @@ header {
       rgba(243, 165, 54, .8)
       ),
     url('img/kitchen.jpg');
+    background-size: cover;
   grid-template-rows: repeat(2, 1fr);
 }
 header h1{
@@ -146,8 +148,8 @@ main > *{
   grid-column: 2 / 11;
 }
 .specialBackground {
-  background: rgb(255,156,0);
-  background: linear-gradient(90deg, rgba(255,156,0,1) 0%, rgba(255,229,0,1) 100%);
+  background-color: #f3a536;
+  /*background: linear-gradient(90deg, rgba(255,156,0,1) 0%, rgba(255,229,0,1) 100%);*/
   height: 60px;
 }
 main h2 {
@@ -172,6 +174,7 @@ main h3 {
   font-style: italic;
   font-weight: 300;
   line-height: 20px;
+  padding-bottom: 10px;
 }
 .intro span {
   font-size: 18px;
@@ -215,7 +218,7 @@ footer > *{
 }
 
 .slider {
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   grid-column: 1 / 12;
   /* line them up horizontally */
   display: flex;
@@ -234,7 +237,7 @@ footer > *{
 }
 .slider div img {
   object-fit: cover;
-  width: 100%;
+  width: 101%;
   height: auto;
 }
 
@@ -274,4 +277,67 @@ footer > *{
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+}
+h5 {
+  grid-column: 10;
+  justify-self: end;
+  color: gray;
+}
+.specialBackground h1 {
+  text-align: center;
+  padding-top: 9px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1017px) {
+  header, main, footer, #contactUs {
+    display: grid;
+    grid-template-columns: 8% repeat(9, 1fr) 8%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 5% repeat(5, 1fr) 5%;
+    grid-template-rows: repeat(3, 100px);
+  }
+  footer nav ul {
+    display: grid;
+    height: 250px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+  }
+  .smallContact, .smallTitle {
+    grid-row: 2 / 3;
+  }
+  .smallContact {
+    grid-column: 2 / 4;
+  }
+  .smallTitle{
+    grid-column: 4 / 6;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+  }
+  .slider {
+    grid-column: 1 / 3;
+  }
+  .descContainer {
+    grid-column: 3 / 4;
+    margin-left: 10px;
+  }
+  .descContainer h3 {
+    margin: 10px 0 10px 0;
+    font-size: 28px;
+  }
+  h5 {
+    grid-column: 7 / 8;
+    margin-top: 20px;
+  }
+  .intro {
+    font-size: 24px;
+  }
+  header {
+
+  }
 }
