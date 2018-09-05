@@ -36,7 +36,7 @@ label:focus {
   display: block;
   padding: 0;
   text-indent: -9999px;
-  background: rgb(243, 165, 54) url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
+  background: rgba(243, 165, 54, 0) url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
   color: rgb(75, 75, 74);
 }
 .menu ul li > label {
@@ -95,10 +95,13 @@ header {
       ),
     url('img/kitchen.jpg');
     background-size: cover;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 header h1{
-  grid-column: 2 / 11;
+  grid-column: 2 / 9;
+  grid-row: 2;
+  font-size: 48px;
+  align-self: center;
 }
 h1, header a button{
   justify-self: left;
@@ -106,9 +109,8 @@ h1, header a button{
   color: rgb(75, 75, 74);
 }
 header a button{
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, 0);
   border: 2px solid rgb(75, 75, 74);
-  border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
   padding: 10px 10px 11px 10px;
@@ -116,7 +118,7 @@ header a button{
   transition: padding all .3s;
 }
 header a {
-  grid-row: 2;
+  grid-row: 1;
   justify-self: center;
   align-self: center;
   color: inherit;
@@ -128,18 +130,12 @@ header a button:hover {
   cursor: pointer;
 }
 .contactHeaderButton {
-  grid-column: 7 / 11;
-  justify-self: start;
+  grid-column: 2 / 6;
+  grid-row: 3;
 }
 .portfolioHeaderButton {
-  grid-column: 2 / 6;
-  justify-self: end;
-}
-h1 {
-  font-size: 36px;
-}
-h1 span {
-  font-weight: 300;
+  grid-column: 7 / 11;
+  grid-row: 3;
 }
 main {
   padding: 20px 0;
@@ -293,6 +289,23 @@ h5 {
     display: grid;
     grid-template-columns: 8% repeat(9, 1fr) 8%;
   }
+  header h1{
+    grid-column: 2 / 7;
+    grid-row: 1 / 5;
+    font-size: 60px;
+    align-self: center;
+  }
+  .contactHeaderButton {
+    grid-column: 7 / 11;
+    grid-row: 2;
+  }
+  .portfolioHeaderButton {
+    grid-column: 7 / 11;
+    grid-row: 3;
+  }
+  header a button {
+    font-size: 24px;
+  }
   footer {
     display: grid;
     grid-template-columns: 5% repeat(5, 1fr) 5%;
@@ -333,9 +346,6 @@ h5 {
   h5 {
     grid-column: 7 / 8;
     margin-top: 20px;
-  }
-  .intro {
-    font-size: 24px;
   }
   header {
 
