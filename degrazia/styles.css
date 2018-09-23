@@ -82,37 +82,45 @@ label:focus {
   color: rgba(75, 75, 74, .5);
 }
 /*End of Navigation Styles*/
+
 header, main, footer, #contactUs {
   display: grid;
   grid-template-columns: 5% repeat(9, 1fr) 5%;
 }
 header {
-  height: 100vh;
-  background:
-    linear-gradient(
-      rgba(243, 165, 54, .8),
-      rgba(243, 165, 54, .8)
-      ),
-    url('img/kitchen.jpg');
-    background-size: cover;
-  grid-template-rows: repeat(4, 1fr);
+    background:
+        linear-gradient(
+        rgba(243, 165, 54, .8),
+        rgba(243, 165, 54, .8)
+        ),
+        url('img/kitchen.jpg');
+        background-size: cover;
+    grid-template-rows: 70px auto 50px auto;
 }
-header h1{
-  grid-column: 2 / 9;
-  grid-row: 2;
-  font-size: 48px;
-  align-self: center;
+header h1 {
+    grid-column: 2 / 11;
+    grid-row-start: 2;
+    font-size: 48px;
 }
-h1, header a button{
-  justify-self: left;
-  align-self: end;
-  color: rgb(75, 75, 74);
+.intro {
+    grid-column: 2 / 11;
+    grid-row: 4;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 50px;
 }
-header a button{
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid rgb(75, 75, 74);
-  font-size: 16px;
-  font-weight: 500;
+h1, header a button {
+    justify-self: left;
+    align-self: end;
+    color: rgb(75, 75, 74);
+}
+header a button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(75, 75, 74);
+    font-size: 16px;
+    font-weight: 500;
   padding: 10px 10px 11px 10px;
   -webkit-transition: all .3s;
   transition: padding all .3s;
@@ -164,17 +172,6 @@ main h3 {
 }
 .aAndB {
   color: rgb(243, 165, 54);
-}
-.intro {
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 20px;
-  padding-bottom: 10px;
-}
-.intro span {
-  font-size: 18px;
-  font-weight: 400;
 }
 .credit a{
   font-size: 8px;
