@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <title>Coded by Design_</title>
+  </head>
+  <body>
+    <header>
+      <nav id="slideInNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="titans.html" id="active">titans</a></li>
+          <ul>
+            <li><a href="titans/coyier.html"><span>chris</span> coyier</a></li>
+            <li><a href="titans/soueidan.html"><span>sara</span> soueidan</a></li>
+            <li><a href="titans/covert.html"><span>abby</span> covert</a></li>
+            <li><a href="titans/marcotte.html"><span>ethan</span> marcotte</a></li>
+            <li><a href="titans/parmenter.html"><span>sarah</span> parmenter</a></li>
+          </ul>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <span onclick="openNav()" id="navIcon">&#9776;</span>
+      <h1>The <span>Titans </span></h1>
+      <aside class="titanAbout">
+        <p>
+          The modern internet is vastly different from it’s early iterations in
+          1989. It’s come a long way from a black and green. We’ve gotten to this
+          point thanks to many different developers. They’ve paved the way towards
+          a universally accessible and usable web. These people are the titans of
+          the web. Each of their skills have lead to a better web, pushing the
+          limits and discovering new ways to make wonderful sites.
+        </p>
+      </aside>
+      <article class="titanList">
+        <section>
+          <img src="images/Web-Chris.png" alt="Chris Coyier portrait">
+          <h2>chris <span>coyier</span></h2>
+        </section>
+        <section>
+          <img src="images/Web-Sara.jpg" alt="Sara Soueidan portrait">
+          <h2>sara <span>soueidan</span></h2>
+        </section>
+        <section>
+          <img src="images/Web-abby.jpg" alt="Abby Covert portrait">
+          <h2>abby <span>covert</span></h2>
+        </section>
+        <section>
+          <img src="images/Web-sarah.jpg" alt="Sarah Parmenter portrait">
+          <h2>sarah <span>parmenter</span></h2>
+        </section>
+        <section>
+          <img src="images/Web-ethan.jpg" alt="Ethan Marcotte portrait">
+          <h2>ethan <span>marcotte</span></h2>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="titans.html" id="active">titans</a></li>
+          <ul>
+            <li><a href="titans/coyier.html"><span>chris</span> coyier</a></li>
+            <li><a href="titans/soueidan.html"><span>sara</span> soueidan</a></li>
+            <li><a href="titans/covert.html"><span>abby</span> covert</a></li>
+            <li><a href="titans/marcotte.html"><span>ethan</span> marcotte</a></li>
+            <li><a href="titans/parmenter.html"><span>sarah</span> parmenter</a></li>
+          </ul>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </nav>
+      <small>
+        handmade by © <a href="https://nicholastrunkey.github.io">Nicholas Trunkey </a>2018
+      </small>
+    </footer>
+    <script>
+      function openNav() {
+          document.getElementById("slideInNav").style.width = "325px";
+      }
+
+      function closeNav() {
+          document.getElementById("slideInNav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
