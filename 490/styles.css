@@ -131,6 +131,11 @@ body {
 }
 #qoute {
   grid-row: 4 / 5;
+  font-size: 34px;
+  font-style: italic;
+}
+#qoute h4 {
+  font-style: normal;
 }
 #personal {
   grid-row: 5 / 6;
