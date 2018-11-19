@@ -3,58 +3,6 @@ body {
   font-family: 'Lora', serif;
   color: #454545;
 }
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #2B2B2B;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  text-decoration: underline;
-  font-size: 22px;
-  font-weight: bold;
-  color: #E0E0E0;
-  transition: 0.2s;
-  overflow-x: hidden;
-}
-
-.sidenav ul {
-  margin-left: 25px;
-}
-
-.sidenav ul li {
-  margin-bottom: 25px;
-}
-
-.sidenav ul ul li a{
-  font-weight: 400;
-  color: #E0E0E0;
-}
-
-.sidenav ul ul li a span {
-  color: #9A9A9A;
-  font-style: italic;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  margin-top: 11px;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  text-decoration: none;
-}
 #landing {
   height: 100vh;
   display: grid;
@@ -87,54 +35,192 @@ body {
   grid-row: 6 / 7;
   font-size: 20px;
 }
-#link {
+.link {
   color: #E0E0E0;
   background-color: #2B2B2B;
   text-decoration: underline;
 }
-footer {
-  background-color: #464646;
-  color: #E0E0E0;
+#titans {
   display: grid;
-  grid-template-rows: 2em auto 3em auto 1em;
-  grid-template-columns: 8% auto 8%;
+  grid-template-columns: 5% 1fr 50px;
+  grid-template-rows: 50px 50px auto auto;
 }
-footer nav {
+#titans h1, #titans .titanList {
+  grid-column: 2 / 4;
+}
+#titans #navIcon {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.titanList {
+  grid-row: 5 / 6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+}
+.titanList a section {
+  display: grid;
+  grid-template-columns: minmax(10px, 300px) 50px;
+  grid-template-rows: 50px 400px max-content;
+}
+.titanList a section img {
+  grid-column: 1 / 2;
   grid-row: 2 / 3;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.titanList a section h2 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  text-align: right;
+  font-size: 34px;
+  margin-top: 10px;
+  color: #454545;
+}
+.titanList a {
+  text-decoration: none;
+}
+#titans h1 {
+  grid-row: 2 / 3;
+  font-size: 34px;
+  color: #9A9A9A;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.title {
+  background-color: #2B2B2B;
+  color: #E8E8E8;
+  padding: 0 3px;
+}
+.titanAbout {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+#about {
+  display: grid;
+  grid-template-columns: 5% 1fr 50px;
+  grid-template-rows: 50px auto auto auto auto;
+}
+#about * {
   grid-column: 2 / 3;
 }
-footer small {
-  grid-row: 4 / 5;
-  grid-column: 1 / 4;
+#about #navIcon {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  cursor: pointer;
 }
-footer nav ul li {
-  margin-bottom: 25px;
-}
-footer nav ul ul {
-  margin-left: 25px;
-}
-footer nav ul li a{
-  color: #E0E0E0;
-  font-size: 18px;
-  text-decoration: underline;
-  font-weight: bold;
-}
-footer nav ul ul li a{
-  font-weight: 400;
-}
-footer nav ul ul li a span {
+#about h1 {
+  grid-row: 2 / 3;
+  font-size: 34px;
   color: #9A9A9A;
+  align-self: center;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+}
+#about p {
+  grid-row: 3 / 4;
+}
+#qoute {
+  grid-row: 4 / 5;
+}
+#personal {
+  grid-row: 5 / 6;
+}
+.bio {
+  display: grid;
+  grid-template-columns: 5% minmax(auto, 400px) 60px 1fr 50px;
+  grid-template-rows: 50px auto auto auto auto auto;
+  grid-template-areas:
+  "bumper . . . nav"
+  "bumper pic . . ."
+  "bumper pic name . ."
+  "bumper bio name . ."
+  "bumper . . . ."
+  "bumper link . . ."
+  "bumper knownFor . . .";
+}
+.bio #navIcon {
+  grid-area: nav;
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.bio h1 {
+  grid-area: name;
+  writing-mode: vertical-rl;
+  font-size: 37px;
+}
+.bio h1 .title {
+  padding: 5px;
+}
+.bio img {
+  grid-area: pic;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bio p {
+  grid-area: bio;
+  line-height: 1.3em;
+  margin-top: 20px;
+}
+.qoutes {
   font-style: italic;
 }
-footer small, footer small a {
-  color: #E0E0E0;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: normal;
-  text-align: center;
+.bio section {
+  grid-area: knownFor;
+  margin-top: 20px;
 }
-footer small a {
-  text-decoration: underline;
+.bio section ul {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  list-style-type: disc;
+}
+.bio section ul li {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.bio section h3 {
+  font-size: 22px;
+  font-style: italic;
+}
+.bio a {
+  grid-area: link;
+  margin: 15px 0;
+  color: #707070;
+}
+.bio p .title {
+  padding: 0;
+}
+@media screen and (min-width: 800px) {
+  .bio {
+    grid-template-columns: 5% minmax(auto, 400px) 20px minmax(20px, 400px) 1fr 50px;
+    grid-template-rows: 50px auto auto auto auto 20px auto 35px;
+    grid-template-areas:
+    ". . . . . nav"
+    ". pic . name . ."
+    ". pic . knownFor . ."
+    ". bio bio . . ."
+    ". bio bio . . ."
+    ". link link . . ."
+    ". . . . . ."
+    ". . . . . .";
+  }
+  .bio h1{
+    writing-mode: horizontal-tb;
+    align-self: end;
+    line-height: 1.3em;
+  }
 }
 @media screen and (min-width: 992px) {
   #navIcon {
@@ -142,13 +228,16 @@ footer small a {
   }
   body {
     display: grid;
-    grid-template-columns: auto 375px;
+    grid-template-columns: auto 250px;
+    grid-template-rows: minmax(100vh, 100%);
   }
   main {
     grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
   footer {
     grid-column: 2 / 3;
-    grid-template-rows: 2em auto 3em auto 1em;
+    grid-row: 1 / 2;
+    grid-template-rows: 2em min-content auto min-content 1em;
   }
 }
