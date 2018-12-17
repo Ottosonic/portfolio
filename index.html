@@ -3,37 +3,25 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Nicholas Trunkey's Portfolio</title>
     <!--
     Author: Nicholas Trunkey
-    Date: 10/18/2018
+    Date: 1/23/2018
 
     Content: Nicholas Trunkey's portfolio.
-
-    front-end::developer {
-      Nicholas Trunkey: forHire;
-    }
-
-    TODO:
-      -Breakdown sections for better flexbox flow
-      -Link spotify api thing
-      -Find other cool apis for location and stuff for footer
-      -Fix Padding between sections
-
-    USEFULL:
-    http://grid.malven.co/
-    http://flexbox.malven.co/
     -->
   </head>
   <body>
     <header>
       <h1 class="hidden">Nicholas Trunkey's Portfolio</h1>
       <img src="images/profilePic.jpg" alt="Picture of Nicholas" id="profilePicture">
-      <h2>Hi, I'm Nicholas and I build engaging websites.</h2>
-      <a href="mailto:nicktrunkey@gmail.com" id="contactButton">Contact me</a>
+      <h2>Hi, I'm Nicholas and I build <span>engaging websites.</span></h2>
+      <div class="contactButton">
+        <a href="mailto:nicktrunkey@gmail.com">Contact me</a>
+      </div>
     </header>
     <main>
       <section id="skills">
@@ -49,26 +37,26 @@
       <section id="work">
         <h2>Recent work</h2>
         <div id="recentWork">
-          <article class="">
-            <img src="images/ttc.png" alt="Thyme to eat screenshot" id="tTCiMG">
-            <h3 id="tTCh3">Thyme To Cook</h3>
-            <h5 id="tTCh5">*Responsive Design, HTML and CSS.</h5>
-            <p id="tTCp">This project focused on making a fully responsive
-              website with a consistent design
-              theme. This was accomplished with a processed
-              design language and some media
-              querys.</p>
+          <img src="images/ttc.png" alt="Thyme to eat screenshot" id="tTCiMG">
+          <h3 id="tTCh3">Thyme To Cook</h3>
+          <h5 id="tTCh5">*Responsive Design, HTML and CSS.</h5>
+          <p id="tTCp">This project focused on making a fully responsive
+            website with a consistent design
+            theme. This was accomplished with a processed
+            design language and some media
+            querys.</p>
+          <div class="viewButton" id="tTCButton">
             <a href="https://ttcnrt.github.io" target="_blank">View Project</a>
-          </article>
-          <article class="">
-            <img src="images/doubleT.png" alt="Double T screenshot" id="diMG">
-            <h3 id="dh3">Double T</h3>
-            <h5 id="dh5">*Applied HTML and CSS to pre-made design.</h5>
-            <p id="dp">This project focused on transforming a
-              mock-up into a functioning website using
-              HTML and CSS only.</p>
+          </div>
+          <img src="images/doubleT.png" alt="Double T screenshot" id="diMG">
+          <h3 id="dh3">Double T</h3>
+          <h5 id="dh5">*Applied HTML and CSS to pre-made design.</h5>
+          <p id="dp">This project focused on transforming a
+            mock-up into a functioning website using
+            HTML and CSS only.</p>
+          <div class="viewButton" id="dButton">
             <a href="http://www.public.asu.edu/~ntrunkey/mockup/mockup.html" target="_blank">View Project</a>
-          </article>
+          </div>
         </div>
       </section>
       <section id="otherSkills">
@@ -96,10 +84,8 @@
         </div>
       </div>
       <div id="grayFooter">
-        <small>
-          Handmade by me &copy2018
-          <a href="mailto:nicktrunkey@gmail.com" target="_blank">Nicholas Trunkey</a>
-        </small>
+        <small>Handmade by me &copy2018</small>
+        <a href="mailto:nicktrunkey@gmail.com" target="_blank">Nicholas Trunkey</a>
       </div>
     </footer>
   </body>

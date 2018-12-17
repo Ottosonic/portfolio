@@ -3,11 +3,14 @@ body {
   font-family: 'Lora', serif;
   color: #454545;
 }
+main {
+  margin-bottom: 20px;
+}
 #landing {
   height: 100vh;
   display: grid;
-  grid-template-columns: 5% auto 50px;
-  grid-template-rows: 50px minmax(10px, 250px) max-content max-content minmax(10px, 150px) max-content minmax(10px, 50px);
+  grid-template-columns: 5% auto 55px;
+  grid-template-rows: 55px minmax(10px, 250px) max-content max-content minmax(10px, 150px) max-content minmax(10px, 50px);
 }
 #landing * {
   grid-column: 2 / 4;
@@ -42,15 +45,15 @@ body {
 }
 #titans {
   display: grid;
-  grid-template-columns: 5% 1fr 50px;
-  grid-template-rows: 50px 50px auto auto;
+  grid-template-columns: 5% minmax(250px, 2fr) 1fr 55px;
+  grid-template-rows: 55px 50px auto auto;
 }
 #titans h1, #titans .titanList {
   grid-column: 2 / 4;
 }
 #titans #navIcon {
   grid-row: 1 / 2;
-  grid-column: 3 / 4;
+  grid-column: 4 / 5;
   justify-self: center;
   align-self: center;
   font-size: 40px;
@@ -58,6 +61,7 @@ body {
 }
 .titanList {
   grid-row: 5 / 6;
+  grid-column: 2 / 4;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -65,8 +69,8 @@ body {
 }
 .titanList a section {
   display: grid;
-  grid-template-columns: minmax(10px, 300px) 50px;
-  grid-template-rows: 50px 400px max-content;
+  grid-template-columns: minmax(10px, 300px) 55px;
+  grid-template-rows: 55px 400px max-content;
 }
 .titanList a section img {
   grid-column: 1 / 2;
@@ -88,6 +92,7 @@ body {
 }
 #titans h1 {
   grid-row: 2 / 3;
+  grid-column: 2 / 3;
   font-size: 34px;
   color: #9A9A9A;
   align-self: center;
@@ -104,15 +109,15 @@ body {
 }
 #about {
   display: grid;
-  grid-template-columns: 5% 1fr 50px;
-  grid-template-rows: 50px auto auto auto auto;
+  grid-template-columns: 5% minmax(250px, 2fr) 1fr 55px;
+  grid-template-rows: 55px auto auto auto auto;
 }
 #about * {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 #about #navIcon {
   grid-row: 1 / 2;
-  grid-column: 3 / 4;
+  grid-column: 4 / 5;
   justify-self: center;
   align-self: center;
   font-size: 40px;
@@ -128,6 +133,7 @@ body {
 }
 #about p {
   grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
 #qoute {
   grid-row: 4 / 5;
@@ -139,11 +145,12 @@ body {
 }
 #personal {
   grid-row: 5 / 6;
+  grid-column: 2 / 3;
 }
 .bio {
   display: grid;
-  grid-template-columns: 5% minmax(auto, 400px) 60px 1fr 50px;
-  grid-template-rows: 50px auto auto auto auto auto;
+  grid-template-columns: 5% minmax(auto, 400px) 60px 1fr 55px;
+  grid-template-rows: 55px auto auto auto auto auto;
   grid-template-areas:
   "bumper . . . nav"
   "bumper pic . . ."
@@ -209,8 +216,8 @@ body {
 }
 @media screen and (min-width: 800px) {
   .bio {
-    grid-template-columns: 5% minmax(auto, 400px) 20px minmax(20px, 400px) 1fr 50px;
-    grid-template-rows: 50px auto auto auto auto 20px auto 35px;
+    grid-template-columns: 5% minmax(auto, 400px) 20px minmax(20px, 400px) 1fr 55px;
+    grid-template-rows: 55px auto auto auto auto 20px auto 35px;
     grid-template-areas:
     ". . . . . nav"
     ". pic . name . ."
