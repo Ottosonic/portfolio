@@ -9,84 +9,97 @@
     <title>Nicholas Trunkey's Portfolio</title>
     <!--
     Author: Nicholas Trunkey
-    Date: 1/23/2018
+    Date: 12/29/2018
 
     Content: Nicholas Trunkey's portfolio.
     -->
   </head>
   <body>
     <header>
-      <h1 class="hidden">Nicholas Trunkey's Portfolio</h1>
+      <h1 class="hidden">Nicholas Trunkey</h1>
       <img src="images/profilePic.jpg" alt="Picture of Nicholas" id="profilePicture">
-      <h2>Hi, I'm Nicholas and I build <span>engaging websites.</span></h2>
-      <div class="contactButton">
-        <a href="mailto:nicktrunkey@gmail.com">Contact me</a>
-      </div>
+      <h2>Hi, I'm Nicholas and I build <a href="#work">engaging websites.</a></h2>
     </header>
     <main>
-      <section id="skills">
-        <div class="des">
-          <h3>User Centered Design</h3><!--insert icons-->
-          <p>From brainstorming new ideas to forming them into concise mock-ups. I know tools to get it all done, such as InDesign, Photoshop, Illustrator, and Lightroom.</p>
-        </div>
-        <div class="dev">
-          <h3>Development</h3>
-          <p>My scripting languages include: HTML, CSS, and I'm a fast-learning beginner of Javascript. I can create fully functional sites in old and new browsers. Additionally, I am skilled at responsive web design.</p>
-        </div>
+      <section class="skills">
+        <h2>Let's cut to the chase.</h2>
+        <section id="code">
+          <h4>My skills</h4>
+          <p>I can code with <span>HTML5, CSS, JavaScript, and Sass.</span> I've created fully <span>responsive
+          websites</span> that work in old and new broswers.</p>
+        </section>
+        <section id="tools">
+          <h4>The tools</h4>
+          <p>I can code HTML emails for newsletters. I am profficient
+          in <span>Adobe Products, Sketch</span>, and <span>Git.</span></p>
+        </section>
       </section>
-      <section id="work">
-        <h2>Recent work</h2>
-        <div id="recentWork">
-          <img src="images/ttc.png" alt="Thyme to eat screenshot" id="tTCiMG">
-          <h3 id="tTCh3">Thyme To Cook</h3>
-          <h5 id="tTCh5">*Responsive Design, HTML and CSS.</h5>
-          <p id="tTCp">This project focused on making a fully responsive
-            website with a consistent design
-            theme. This was accomplished with a processed
-            design language and some media
-            querys.</p>
-          <div class="viewButton" id="tTCButton">
-            <a href="https://ttcnrt.github.io" target="_blank">View Project</a>
+      <section class="work" id="work">
+        <h2>Some notable projects</h2>
+        <article>
+          <div class="project">
+            <div>
+              <img src="images/cbd.png" alt="Coded by Design Screenshot" id="cBDimg">
+            </div>
+            <h3><a href="https://nicholastrunkey.github.io/490/index.html">Coded by Design</a></h3>
+            <p>
+              Coded by Design includes responsive design, extensive CSS Grid &
+              Flexbox, and JavaScript.
+            </p>
+            <span>
+              As a capstone project from my undergrad, Coded by Design showcases
+               skills I learned in ASU's GIT major.
+            </span>
           </div>
-          <img src="images/doubleT.png" alt="Double T screenshot" id="diMG">
-          <h3 id="dh3">Double T</h3>
-          <h5 id="dh5">*Applied HTML and CSS to pre-made design.</h5>
-          <p id="dp">This project focused on transforming a
-            mock-up into a functioning website using
-            HTML and CSS only.</p>
-          <div class="viewButton" id="dButton">
-            <a href="http://www.public.asu.edu/~ntrunkey/mockup/mockup.html" target="_blank">View Project</a>
+          <div class="project">
+            <div>
+              <img src="images/scoop.png" alt="The Scoop Newsletter Screenshot" id="Scoopimg">
+            </div>
+            <h3>The Scoop Newsletter</h3>
+            <p>
+              This project included weekly development and strict deadlines
+              using HTML Email and <a href="https://mailchimp.com/">Mailchimp</a>.
+            </p>
+            <span>
+              The Scoop is a newsletter for current students and alumni from ASU's GIT major.
+            </span>
           </div>
-        </div>
+          <div class="project">
+            <div>
+              <img src="images/ttc.png" alt="Thyme to eat screenshot" id="tTCimg">
+            </div>
+            <h3><a href="https://ttcnrt.github.io">Thyme To Cook</a></h3>
+            <p>
+              Thyme To Cook was an exersize in responsive design/development,
+              and was developed from a team designed mockup.
+            </p>
+          </div>
+          <div class="project">
+            <div>
+              <img src="images/doubleT.png" alt="Double T screenshot" id="dimg">
+            </div>
+            <h3><a href="http://www.public.asu.edu/~ntrunkey/mockup/mockup.html">Double T</a></h3>
+            <p>
+              This project focused on transforming a mock-up into a functioning
+              website using HTML and CSS only.
+            </p>
+          </div>
+        </article>
       </section>
-      <section id="otherSkills">
+    </main>
+    <footer>
+      <section class="socialsWrapper">
         <h2>Find me elsewhere</h2>
-        <h4>I have other skills too!</h4>
-        <div id="otherLinks">
+        <div class="socials">
           <a href="https://www.flickr.com/photos/139094744@N06/" target="_blank">Flickr</a>
           <a href="https://www.linkedin.com/in/nicholas-trunkey-b1213912a/" target="_blank">LinkedIn</a>
           <a href="https://www.behance.net/nicktrunked36d" target="_blank">Behance</a>
         </div>
       </section>
-      <section id="aboutMe">
-        <h2>Who am I?</h2>
-        <p>I like to create engaging websites and find the sweet spot between
-          designing and coding. I am currently a student living, working, and
-          studying at Arizona State University.
-          My undergrad degree focuses in web development and studio photography.</p>
-      </section>
-    </main>
-    <footer>
-      <div id="orangeFooter">
-        <h2>Want to get started?</h2>
-        <div class="contactButtonFoot">
-          <a href="mailto:nicktrunkey@gmail.com">Send me an Email</a>
-        </div>
-      </div>
-      <div id="grayFooter">
-        <small>Handmade by me &copy2018</small>
-        <a href="mailto:nicktrunkey@gmail.com" target="_blank">Nicholas Trunkey</a>
-      </div>
+      <a href="mailto:nicktrunkey@gmail.com"><div class="contactButtonFoot">
+        Send me an Email
+      </div></a>
+      <small>Handmade by me &copy2019 <a href="mailto:nicktrunkey@gmail.com" target="_blank">Nicholas Trunkey</a></small>
     </footer>
   </body>
 </html>
