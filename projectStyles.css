@@ -1,0 +1,79 @@
+/* Everything for .work is in here */
+.work {
+  margin-bottom: 4em;
+}
+.work div.icon {
+  margin: 3em auto 0 auto;
+}
+.work h2 {
+  margin: 0;
+}
+.work article {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+.project {
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: grid;
+  grid-template:
+  "a a" auto
+  "b b" 10em
+  "c c" auto
+  "d d" auto / 2fr 1fr;
+  border-left: 3px solid #696969;
+  border-radius: 2px;
+}
+.project:nth-last-of-type(even) {
+  border-left: 3px solid orange;
+}
+.project h3 {
+  grid-area: a;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project div {
+  grid-area: b;
+  overflow: hidden;
+  object-fit: cover;
+}
+.project p {
+  grid-area: c;
+  padding: 5px 10px;
+  background-color: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.project > span {
+  grid-area: d;
+  font-size: .8rem;
+  color: dimgray;
+  padding: 10px;
+}
+@media screen and (min-width: 850px) {
+  .project {
+    width: 700px;
+    max-width: none;
+    grid-template:
+    "b a" 2em
+    "b c" 6em
+    "b d" 5em / 400px 2fr;
+    border-left: none;
+  }
+  .project:nth-last-of-type(even) {
+    border-left: none;
+  }
+  .project > span {
+    align-self: end;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .work article {
+    grid-template-columns: 1fr 1fr;
+  }
+}

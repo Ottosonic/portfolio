@@ -12,7 +12,6 @@ body {
 }
 img {
   width: 100%;
-  max-width: 375px;
 }
 .hidden {
   display: none;
@@ -83,59 +82,9 @@ a {
 .skills section h4 {
   margin-bottom: 5px;
 }
-.work {
-  margin-bottom: 4em;
-}
-.work div.icon {
-  margin: 3em auto 0 auto;
-}
-.work h2 {
-  margin: 0;
-}
-.work article {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.project {
-  text-align: left;
-  margin-top: 15px;
-  background-color: #f0ede8;
-  border-radius: 10px;
-  color: #000c;
-  width: 100%;
-  max-width: 400px;
-  display: grid;
-  grid-template:
-  "a" 3em
-  "b" 10em
-  "c" auto / 1fr;
-}
-.project h3 {
-  grid-area: a;
-  padding: 16px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.project div {
-  grid-area: b;
-  object-fit: cover;
-  overflow-y: hidden;
-  box-shadow: 0 1px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;
-}
-.project p {
-  grid-area: c;
-  padding: 16px;
-  background-color: #f0ede8;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-.project span {
-  font-size: .8rem;
-  color: dimgray;
-  padding: 10px;
-}
+
+/* .work is in projectStyles.css */
+
 .socialsWrapper {
   max-width: 420px;
   margin: 2em auto;
@@ -150,11 +99,11 @@ a {
   margin: 0 auto 1.5em auto;
   border-radius: 10px;
   padding: 10px;
-  width: 10em;
+  width: 15em;
   transition: .3s ease;
 }
 .contactButtonFoot:hover {
-  width: 11em;
+  width: 16em;
   box-shadow: 0 1px 10px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;
 }
 .socialsWrapper {
