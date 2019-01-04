@@ -25,11 +25,11 @@
   "b b" 10em
   "c c" auto
   "d d" auto / 2fr 1fr;
-  border-left: 3px solid #696969;
+  border-left: 3px solid orange;
   border-radius: 2px;
 }
 .project:nth-last-of-type(even) {
-  border-left: 3px solid orange;
+  border-left: 3px solid #696969;
 }
 .project h3 {
   grid-area: a;
