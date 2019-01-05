@@ -9,71 +9,66 @@
   margin: 0;
 }
 .work article {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .project {
+  overflow: hidden;
+  position: relative;
   text-align: left;
-  margin-top: 20px;
+  margin: 20px 1em 0 1em;
   width: 100%;
-  max-width: 400px;
+  max-width: 375px;
+  height: 375px;
+  color: GhostWhite;
   display: grid;
   grid-template:
-  "a a" auto
-  "b b" 10em
-  "c c" auto
-  "d d" auto / 2fr 1fr;
-  border-left: 3px solid orange;
-  border-radius: 2px;
+  ". . ." 1em
+  ". a ." 25%
+  ". b ." min-content
+  ". c. " auto
+  ". . ." 1em / 1em 1fr 1em;
+  background-color: #232323;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
+	-moz-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
+  box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;
 }
-.project:nth-last-of-type(even) {
-  border-left: 3px solid #696969;
+.project > * {
+  z-index: 99;
 }
 .project h3 {
   grid-area: a;
+  align-self: end;
   padding: 10px;
+  font-size: 1.5rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.project div {
-  grid-area: b;
-  overflow: hidden;
-  object-fit: cover;
-}
 .project p {
-  grid-area: c;
+  grid-area: b;
   padding: 5px 10px;
   background-color: none;
   border-radius: 10px;
   font-size: 1rem;
 }
 .project > span {
-  grid-area: d;
+  grid-area: c;
   font-size: .8rem;
-  color: dimgray;
+  color: GhostWhite;
   padding: 10px;
 }
-@media screen and (min-width: 850px) {
-  .project {
-    width: 700px;
-    max-width: none;
-    grid-template:
-    "b a" 2em
-    "b c" 6em
-    "b d" 5em / 400px 2fr;
-    border-left: none;
-  }
-  .project:nth-last-of-type(even) {
-    border-left: none;
-  }
-  .project > span {
-    align-self: end;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .work article {
-    grid-template-columns: 1fr 1fr;
-  }
+.project img {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  background: url(images/cbd.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: blur(1px);
+  mix-blend-mode: overlay;
 }
