@@ -14,6 +14,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.work a {
+  text-decoration: none;
+}
 .project {
   overflow: hidden;
   position: relative;
