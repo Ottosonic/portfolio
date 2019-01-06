@@ -16,16 +16,21 @@
 }
 .work a {
   text-decoration: none;
-}
-.project {
   overflow: hidden;
   position: relative;
   text-align: left;
+  color: GhostWhite;
   margin: 20px 1em 0 1em;
   width: 100%;
   max-width: 375px;
   height: 375px;
-  color: GhostWhite;
+  background-color: #232323;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
+  -moz-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
+  box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;
+}
+.project {
   display: grid;
   grid-template:
   ". . ." 1em
@@ -33,11 +38,7 @@
   ". b ." min-content
   ". c. " auto
   ". . ." 1em / 1em 1fr 1em;
-  background-color: #232323;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
-	-moz-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
-  box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;
+
 }
 .project > * {
   z-index: 99;
