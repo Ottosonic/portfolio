@@ -1,0 +1,80 @@
+body {
+  background-color: #111111;
+  color: #fff;
+  font-family: 'B612 Mono', monospace;
+  font-size: 12px;
+  padding: 2em;
+}
+h1 {
+  font-size: 1.3rem;
+  width: 3em;
+}
+h2 {
+  margin-top: 80px;
+  font-size: .9rem;
+}
+.subHeader, .sectionBio {
+  color: #adacac;
+  max-width: 400px;
+  margin-top: 10px;
+}
+header {
+  margin: 30px 0 30px 0;
+  margin-left: 30px;
+}
+span {
+  color: #e67e1c;
+}
+.sectionBio {
+  line-height: 15px;
+}
+.locationWrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.locationList, .mapArea {
+  width: 300px;
+  height: 300px;
+  border-radius: 2px;
+  background-color: #303030;
+  margin-right: 10px;
+}
+.locationList {
+  display: grid;
+  grid-gap: 5px;
+  grid-template:
+  ". . ." 1fr
+  ". a ." 1fr
+  ". b ." 1fr
+  ". c ." 1fr
+  ". . ." 1fr / 5px auto 5px;
+}
+.locA, .pinA {
+  grid-area: a;
+}
+.locB, .pinB {
+  grid-area: b;
+}
+.locC, .pinC {
+  grid-area: c;
+}
+.locationList li, .mapArea li {
+  background-color: #111111;
+  padding: 10px;
+  transition: .3s ease-in-out;
+}
+.locA:hover, .locB:hover, .locC:hover {
+  border: 1px orange solid;
+}
+.mapArea {
+  display: grid;
+  grid-gap: 5px;
+  grid-template:
+  ". a . . ." 1fr
+  ". . . b ." 1fr
+  ". . . . ." 1fr
+  ". . c . ." 1fr
+  ". . . . ." 1fr / 1fr 1fr 1fr 1fr 1fr;
+}
