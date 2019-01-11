@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 body {
-  background-color: #111111;
+  background-color: #181818;
   color: #fff;
   font-family: 'B612 Mono', monospace;
   font-size: 12px;
@@ -27,6 +32,8 @@ span {
 }
 .sectionBio {
   line-height: 15px;
+  padding-left: 5px;
+  border-left: 1px solid orange;
 }
 .locationWrapper {
   margin-top: 10px;
@@ -37,9 +44,10 @@ span {
 .locationList, .mapArea {
   width: 300px;
   height: 300px;
+  padding: 10px;
   border-radius: 2px;
   background-color: #303030;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
 }
 .locationList {
   display: grid;
@@ -62,16 +70,24 @@ span {
 }
 .locationList li, .mapArea li {
   background-color: #111111;
-  padding: 10px;
+  padding: 20px;
   transition: .3s ease-in-out;
+  border: 1px #111111 solid;
+}
+.mapArea li {
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
 }
 .locA:hover, .locB:hover, .locC:hover {
   border: 1px orange solid;
 }
 .mapArea {
+  background-image: url(images/topography.svg);
   display: grid;
   grid-gap: 5px;
   grid-template:
+  ". . . . ." 1fr
   ". a . . ." 1fr
   ". . . b ." 1fr
   ". . . . ." 1fr
