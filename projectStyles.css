@@ -14,31 +14,34 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.work a {
-  text-decoration: none;
+.projectContainer {
+  box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  text-align: left;
-  color: GhostWhite;
   margin: 20px 1em 0 1em;
   width: 100%;
   max-width: 375px;
   height: 375px;
-  background-color: #232323;
+  background: rgb(63, 63, 63);
   border-radius: 5px;
+  text-align: left;
   -webkit-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
   -moz-box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;;
   box-shadow: 0 4px 5px 0 rgba(86, 86, 86, 0.5),0 0 0 1px #FFF0;
 }
+.projectContainer a {
+  text-decoration: none;
+  color: GhostWhite;
+  height: 100%;
+  }
 .project {
   display: grid;
+  height: 100%;
   grid-template:
-  ". . ." 1em
-  ". a ." 25%
+  ". a ." 4em
   ". b ." min-content
   ". c. " auto
   ". . ." 1em / 1em 1fr 1em;
-
 }
 .project > * {
   z-index: 99;
@@ -75,4 +78,10 @@
   background-size: cover;
   filter: blur(1px);
   mix-blend-mode: overlay;
+}
+#sandbox {
+  border: 6px solid orange;
+  background: rgb(255,165,0);
+  background: linear-gradient(328deg, rgba(255,165,0,1) 0%, rgba(255,104,0,1) 100%);
+
 }
