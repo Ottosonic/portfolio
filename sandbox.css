@@ -18,6 +18,9 @@ h2 {
   margin-top: 80px;
   font-size: .9rem;
 }
+h3 {
+  font-size: .8rem;
+}
 .subHeader, .sectionBio {
   color: #adacac;
   max-width: 400px;
@@ -35,13 +38,13 @@ span {
   padding-left: 5px;
   border-left: 1px solid orange;
 }
-.locationWrapper {
+.locationWrapper, .todoWrapper {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.locationList, .mapArea {
+.locationList, .mapArea, .makeElementWrapper, .deleteElementWrapper, .userInputWrapper {
   width: 300px;
   height: 300px;
   padding: 10px;
@@ -93,4 +96,31 @@ span {
   ". . . . ." 1fr
   ". . c . ." 1fr
   ". . . . ." 1fr / 1fr 1fr 1fr 1fr 1fr;
+}
+.makeElementWrapper, .deleteElementWrapper, .userInputWrapper {
+  display: grid;
+  grid-template:
+  "" min-content
+  "" 1fr
+  "" min-content / 1fr;
+}
+ .makeElement, .deleteElement, .userInput {
+   border: 1px solid #181818;
+   margin: 10px 0;
+}
+.makeElementWrapper button, .deleteElementWrapper button, .userInputWrapper input {
+  margin: 10px;
+  align-self: end;
+}
+.makeElement li, .deleteElement li, .userInput li {
+  cursor: pointer;
+  background-color: #181818;
+  padding: 10px;
+  width: 100px;
+  margin: 10px auto;
+  transition: .3s ease-in-out;
+  border: 1px #111111 solid;
+}
+.deleteElement li:hover {
+  border: 1px orange solid;
 }

@@ -37,12 +37,37 @@
     <section>
       <h2>jQuert to-do list.</h2>
       <aside class="sectionBio">
-
+        I'm breaking this project up into three pieces. That way I can isolate issues
+        since I've never done this with jQuery before. Breaking this into peices leaves
+        making an element, deleting an element, generating an element with user input.
       </aside>
       <div class="todoWrapper">
-        <ul>
-          <li>Item 1</li>
-        </ul>
+        <div class="makeElementWrapper">
+          <h3>Make an Element</h2>
+          <ul class="makeElement">
+
+          </ul>
+          <button type="button" name="genElement" class="genElement">generate list item</button>
+        </div>
+        <div class="deleteElementWrapper">
+          <h3>Delete an Element</h3>
+          <ul class="deleteElement">
+            <li>List item!</li>
+            <li>List item!</li>
+            <li>List item!</li>
+            <li>List item!</li>
+            <li>List item!</li>
+          </ul>
+          <p>Click a list item to delete it!</p>
+        </div>
+        <div class="userInputWrapper">
+          <h3>Create element with user input</h3>
+          <ul class="userInput">
+
+          </ul>
+          <input type="text" class="input" placeholder="Type something...">
+          <button type="button" class="inputButton">Type something then click me</button>
+        </div>
       </div>
     </section>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
