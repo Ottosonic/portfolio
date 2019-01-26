@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=B612+Mono:400" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="sandbox.css">
+    <link rel="stylesheet" href="planeTicket.css">
   </head>
   <body>
     <header>
@@ -35,7 +36,7 @@
       </div>
     </section>
     <section>
-      <h2>jQuert to-do list.</h2>
+      <h2>jQuert input types</h2>
       <aside class="sectionBio">
         I'm breaking this project up into three pieces. That way I can isolate issues
         since I've never done this with jQuery before. Breaking this into peices leaves
@@ -68,6 +69,45 @@
           <input type="text" class="input" placeholder="Type something...">
           <button type="button" class="inputButton">Type something then click me</button>
         </div>
+      </div>
+    </section>
+    <section>
+      <h2>CSS Grid Plane Ticket</h2>
+      <aside class="sectionBio">
+        I want to show how powerful CSS Grid is. I found plane tickets to be a complex but interseting layout so I'm going to make a digital one.
+        It should take up two "sections" wide while there is enough horizontal realistate, but move to virticle when the screen width is smaller than
+        two "sections" worth.
+      </aside>
+      <div class="planeTicketWrapper">
+        <ul class="planeTicket">
+          <h3>Alaska Air</h3>
+          <li id="passengerName">
+            <p>Passenger Name: </p><span>Nicholas Trunkey</span>
+          </li>
+          <li id="departureCity">
+            <p>Departure City: </p><span>Seattle, WA</span>
+          </li>
+          <li id="arrivalCity">
+            <p>Arrival City: </p><span>Spokane, WA</span>
+          </li>
+          <li id="flightNumber">
+            <p>Flight Number: </p><span>426</span>
+          </li>
+          <li id="date">
+            <p>Date: </p><span>01/23/2019</span>
+          </li>
+          <li id="seat">
+            <p>Seat:</p><span>27F</span>
+          </li>
+          <li id="boardingTime">
+            <p>Boarding Time:</p><span>4:22am</span>
+          </li>
+          <li id="departureTime">
+            <p>Departure Time:</p><span>4:50am</span>
+          </li>
+          <img src="images/barcodeVir.png" id="barcodeVir">
+          <img src="images/barcodeHor.png" id="barcodeHor">
+        </ul>
       </div>
     </section>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

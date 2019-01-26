@@ -1,0 +1,120 @@
+.planeTicketWrapper {
+  width: 600px;
+  height: 250px;
+  border-radius: 2px;
+  background-color: #303030;
+  margin: 10px 10px 10px 0;
+}
+.planeTicket {
+  height: 100%;
+  display: grid;
+  grid-template:
+  ". a a a a . . ." 60px
+  ". . . . . . j ." 10px
+  ". b b b c . j ." 30px
+  ". b b b c . j ." 30px
+  ". f f f d . j ." 30px
+  ". f f f d . j ." 30px
+  ". . . . . . j ." 10px
+  ". e g h i . . ." 40px
+  ". . . . . . . ." 10px / 10px 130px 1fr 130px 130px 10px 50px 10px;
+}
+.planeTicket h3 {
+  grid-area: a;
+  font-size: 2rem;
+  color: orange;
+  align-self: center;
+}
+#passengerName {
+  grid-area: b;
+}
+#departureCity {
+  grid-area: c;
+}
+#arrivalCity {
+  grid-area: d;
+}
+#flightNumber {
+  grid-area: e;
+}
+#date {
+  grid-area: f;
+}
+#seat {
+  grid-area: g;
+}
+#boardingTime {
+  grid-area: h;
+}
+#departureTime {
+  grid-area: i;
+}
+#barcodeVir {
+  display: inherit;
+  grid-area: j;
+  height: 100%;
+  width: 100%;
+}
+#barcodeHor {
+  grid-area: k;
+  display: none;
+}
+.planeTicket > * p {
+  color: #adacac;
+  font-size: .65rem;
+}
+.planeTicket > * span {
+  color: orange;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.planeTicket > * {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+ }
+.planeTicket #barcode {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+#passengerName, #departureCity, #arrivalCity, #date {
+  box-sizing: border-box;
+  background-color: #181818;
+  padding: 5px;
+
+}
+#passengerName span, #departureCity span, #arrivalCity span, #date span{
+  font-size: .8rem;
+}
+@media screen and (max-width: 667px){
+  #barcodeHor {
+    display: inherit;
+    width: 100%;
+    height: 30px;
+  }
+  #barcodeVir {
+    display: none;
+  }
+  .planeTicketWrapper {
+    width: 300px;
+    height: auto;
+  }
+  .planeTicket {
+    grid-template:
+    ". . . . . ." 10px
+    ". a a a a ." 50px
+    ". . . . . ." 10px
+    ". b b b b ." 40px
+    ". c c d d ." 40px
+    ". f f f f ." 40px
+    ". . . . . ." 10px
+    ". e e g g ." 45px
+    ". h h i i ." 45px
+    ". . . . . ." 10px
+    ". k k k k ." min-content
+    ". . . . . ." 10px / 10px 1fr .5fr .5fr 1fr 10px;
+  }
+  .planeTicket > * {
+    margin-bottom: 5px;
+  }
+}
