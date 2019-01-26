@@ -4,7 +4,7 @@ body {
 }
 body div header img { /*TT Icon*/
   width: 177px;
-  margin: auto;
+  margin:0 auto;
   display: block;
 }
 body div #banner { /*First banner image*/
@@ -23,7 +23,7 @@ body div #banner { /*First banner image*/
 body div #banner h1 { /*Text within first banner image*/
   z-index: 100;
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   width: 100%;
   text-align: center;
   color: #f5f5f4;
@@ -90,6 +90,7 @@ ul li:not(:last-child):after { /*put a | after first 3 li(s)*/
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
+  max-width: 593px;
 }
 #selfies img {
   width: 155px;
@@ -124,6 +125,7 @@ ul li:not(:last-child):after { /*put a | after first 3 li(s)*/
   font-size: 48px;
   color: #524741;
   font-family: "effra";
+  padding: 60px 0 30px 0;
 }
 #portfolio {
   background-color: #5b866b;
@@ -133,7 +135,7 @@ ul li:not(:last-child):after { /*put a | after first 3 li(s)*/
   color: #f5f5f4;
   font-family: "effra";
   font-size: 48px;
-  padding-top: 84px;
+  padding: 60px 0 30px 0;
 }
 #examples {
   margin: auto;
@@ -141,7 +143,9 @@ ul li:not(:last-child):after { /*put a | after first 3 li(s)*/
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0 20px;
+  width: 90%;
+  max-width: 1030px;
+  padding-bottom: 30px;
 }
 #examples img {
   display: inline;
@@ -203,11 +207,13 @@ footer img {
 }
 footer p {
   margin: 0px;
-  padding-top: 30px;
-  padding-right: 10px;
   font-family: "effra";
   font-size: 14px;
   color: #524741;
+}
+#stickyBtT {
+  position: relative;
+  float: right;
 }
 @media screen and (max-width: 1134px) {
   #about {
@@ -215,5 +221,14 @@ footer p {
     "a" min-content
     "b" min-content
     "c" min-content / 1fr ;
+  }
+}
+@media screen and (max-width: 586px) {
+  body div #banner h1 {
+    font-size: 48px;
+    bottom: 10%;
+  }
+  body div #banner h1 span {
+    font-size: 38px;
   }
 }
