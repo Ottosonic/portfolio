@@ -44,7 +44,7 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.locationList, .mapArea, .makeElementWrapper, .deleteElementWrapper, .userInputWrapper {
+.locationList, .mapArea, .makeElementWrapper, .deleteElementWrapper, .userInputWrapper, .balancedWrapperA, .balancedWrapperB {
   width: 300px;
   height: 300px;
   padding: 10px;
@@ -123,4 +123,46 @@ span {
 }
 .deleteElement li:hover {
   border: 1px orange solid;
+}
+.titleName {
+  color: dimgray;
+  font-style: underline;
+}
+.balancedWrapperA, .balancedWrapperB {
+  margin-top: 5px;
+  display: grid;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+}
+.balancedWrapperA {
+  grid-template:
+  ". . ." 1fr
+  ". a ." 100px
+  ". . ." 4px
+  ". b ." 4px
+  ". . ." 1fr / minmax(5px, 300px) 100px minmax(5px, 300px);
+}
+.balancedWrapperB {
+  grid-template:
+  ". . ." 1fr
+  ". c ." 4px
+  ". . ." 4px
+  ". d ." 100px
+  ". . ." 1fr / minmax(5px, 300px) 100px minmax(5px, 300px);
+}
+#shA {
+ grid-area: a;
+}
+#shB {
+ grid-area: b;
+}
+#shC {
+ grid-area: c;
+}
+#shD {
+ grid-area: d;
+}
+.shape {
+  background-color: #181818;
 }

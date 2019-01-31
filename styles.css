@@ -41,7 +41,7 @@ header, main, footer {
 header {
   height: 30em;
   background: rgb(255,165,0);
-  background: linear-gradient(328deg, rgba(255,165,0,1) 0%, rgba(255,104,0,1) 100%); 
+  background: linear-gradient(328deg, rgba(255,165,0,1) 0%, rgba(255,104,0,1) 100%);
   text-align: center;
   display: grid;
   grid-template:
@@ -127,6 +127,10 @@ small {
 .icon {
   width: 60px;
   color: orange;
+}
+.titleName {
+  color: dimgray;
+  font-style: underline;
 }
 @media screen and (min-width: 850px) {
   .skills {
