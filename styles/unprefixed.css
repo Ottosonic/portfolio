@@ -1,0 +1,174 @@
+html {
+  font-size: 18px;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: GhostWhite;
+  color: DimGray;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.hidden {
+  display: none;
+}
+span {
+  color: orange;
+}
+h2 {
+  color: #000c;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: .3em 0 0 0;
+  text-align: center;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+h4 {
+  color: orange;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+a {
+  color: inherit;
+}
+.skills, .socialsWrapper {
+  margin-top: 4em;
+  padding: 10px;
+  background-color: GhostWhite;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(233,240,243,0.6),0 0 0 1px #E6ECF8;
+          box-shadow: 0 5px 10px 0 rgba(233,240,243,0.6),0 0 0 1px #E6ECF8;
+  text-align: center;
+}
+.skills section {
+  margin: 20px 0;
+}
+.skills section h4 {
+  margin-bottom: 15px;
+}
+
+/* .work is in projectStyles.css */
+
+.titleIcon {
+  display: block;
+  margin: 40px auto 15px auto;
+}
+footer {
+  margin-top: 2em;
+  background-color: #e7e7e7;
+  color: #878787;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  height: 145px;
+  display: grid;
+  grid-template-rows:  [contactMe] 4fr [socials] 1fr [bottomArea] 1fr;
+  grid-template-columns: [gutterLeft] 10px [social1] 1fr [social2] 1fr [gutterRight] 10px;
+}
+footer a {
+  text-decoration: none;
+}
+.contactButtonFoot {
+  grid-row: contactMe;
+  grid-column: 2 / 5;
+  justify-self: center;
+  align-self: center;
+  color: #4d4d4d;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.contactButtonFoot:hover {
+  padding: 10px 25px;
+  box-shadow: 0px 0px 30px -10px rgba(87,87,87,1);
+}
+#linkedIn {
+  grid-row: socials;
+  grid-column: social1;
+  font-weight: 400;
+}
+#behance {
+  grid-row: socials;
+  grid-column: social2;
+  font-weight: 400;
+}
+footer p {
+  grid-row: bottomArea;
+  grid-column: 2 / 5;
+  font-weight: 400;
+  align-self: end;
+}
+footer p a {
+  color: orange;
+}
+@media screen and (min-width: 850px) {
+  .skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template:
+    "a a" auto
+    "b c" auto / 1fr 1fr;
+  }
+  .skills h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: a;
+  }
+  #code {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: b;
+    padding-right: 1em;
+  }
+  #tools {
+    grid-area: c;
+    padding-left: 1em;
+  }
+  .skills > img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .skills > h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media screen and (min-width: 634px) {
+  footer {
+    grid-template-rows: [contactMe] 8fr [bottomArea] 1fr;
+    grid-template-columns: [gutterLeft] 10px [social1] 70px [gutter1] minmax(0, 10px) [social2] 70px [gutter2] minmax(0, 10px) [blood] auto [gutterRight] 10px;
+    padding-bottom: 30px;
+  }
+  .contactButtonFoot {
+    grid-row: contactMe;
+    grid-column: 2 / 7;
+  }
+  #linkedIn {
+    grid-row: bottomArea;
+    grid-column: social1;
+    align-self: end;
+    justify-self: start;
+  }
+  #behance {
+    grid-row: bottomArea;
+    grid-column: social2;
+    align-self: end;
+    justify-self: start;
+  }
+  footer p {
+    grid-row: bottomArea;
+    grid-column: blood;
+    grid-row: bottomArea;
+    grid-column: blood;
+    justify-self: end;
+  }
+}
+/* Auto prefixed with https://autoprefixer.github.io/ <3 */

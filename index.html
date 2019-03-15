@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- CSS is auto prefixed with https://autoprefixer.github.io/ <3 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="projectStyles.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/projectStyles.css">
     <title>Nicholas Trunkey's Portfolio</title>
     <meta name="author" content="Nicholas Trunkey">
     <meta name="description" content="Nicholas Trunkey's portfolio.">
@@ -15,86 +17,125 @@
     <header>
       <h1 class="hidden">Nicholas Trunkey</h1>
       <img src="images/profilePic.jpg" alt="Picture of Nicholas" id="profilePicture">
-      <h2>Hi, I'm Nicholas and I build <a href="#work">engaging websites.</a></h2>
+      <h2 class="fade-in-normal">Hi, I'm Nicholas</h2>
+      <h3 class="fade-in-slow"> and I build engaging websites.</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0009" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fade-in-slow"><path d="M6 9l6 6 6-6"/></svg>
     </header>
     <main>
       <section class="skills">
-        <h2>Let's cut to the chase.</h2>
+        <h2>a few nice skills</h2>
         <section id="code">
-          <img class="icon"src="images/baseline-code-24px.svg" alt="">
-          <h4>My skills</h4>
-          <p>I can code with <span>HTML5, CSS, jQuery, and Sass.</span> I've created fully <span>responsive
-          websites</span> that work in old and new broswers.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#444444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <h4>Languages I know</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Sass</li>
+            <li>jQuery</li>
+          </ul>
         </section>
         <section id="tools">
-          <img class="icon" src="images/baseline-build-24px.svg" alt="">
-          <h4>The tools</h4>
-          <p>I can code HTML emails for newsletters. I am profficient
-          in <span>Adobe Products, Sketch</span>, and <span>Git.</span></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#444444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <h4>Development tools I use</h4>
+          <ul>
+            <li>Atom</li>
+            <li>Git</li>
+            <li>Photoshop</li>
+            <li>InDesign</li>
+            <li>Illustrator</li>
+          </ul>
         </section>
       </section>
+      <!-- -->
       <section class="work" id="work">
-        <div class="icon">
-          <img class="icon" src="images/baseline-dashboard-24px.svg" alt="">
-        </div>
-        <h2>Some notable projects</h2>
+        <h2>some notable projects</h2>
         <article>
           <div class="projectContainer" id="sandbox">
             <a href="https://nicholastrunkey.github.io/sandbox.html" target="_blank">
+              <h3>The Sandbox</h3>
               <div class="project">
-                <h3>The Sandbox</h3>
-                <img src="images/sharp_star_white_48dp.png" alt="star icon" id="smallIcon">
-                <p>A place for coding exersizes. It houses smaller projects meant for practice and experimentation.</p>
-                <span>
-                  The Sandbox includes practice projects for jQuery, Sass, and Vue.js.
-                </span>
+                <div class="imgContainer">
+                  <img src="images/sandbox.png" alt="Sandbox Screenshot">
+                </div>
+                <p>
+                  A place for coding exersizes. It houses smaller projects meant for practice and experimentation.
+                </p>
+                <div class="languages">
+                  <ul>
+                    <li class="css">CSS3</li>
+                    <li class="cssExpanded">CSS Grid</li>
+                    <li class="cssExpanded">CSS Flexbox</li>
+                    <li class="cssExpanded">Fully Responsive</li>
+                    <li class="javascript">JavaScript</li>
+                    <li class="html5">HTML5</li>
+                  </ul>
+                </div>
               </div>
             </a>
           </div>
           <div class="projectContainer">
             <a href="https://nicholastrunkey.github.io/490/index.html" target="_blank">
+              <h3>Coded by Design</h3>
               <div class="project">
-                <img src="images/cdb.png" alt="The Scoop Newsletter Screenshot" class="backgroundImg">
-                <h3>Coded by Design</h3>
+                <div class="imgContainer">
+                  <img src="images/cbd.png" alt="Coded by Design Screenshot">
+                </div>
                 <p>
-                  Coded by Design includes responsive design, extensive <span>CSS Grid &
-                  Flexbox, and JavaScript</span>.
+                  As a capstone project for my undergrad, Coded by Design showcases what I learned in ASU’s GIT program.
                 </p>
-                <span>
-                  As a capstone project from my undergrad, Coded by Design showcases
-                   skills I learned in ASU's GIT major.
-                </span>
+                <div class="languages">
+                  <ul>
+                    <li class="css">CSS3</li>
+                    <li class="cssExpanded">CSS Grid</li>
+                    <li class="cssExpanded">CSS Flexbox</li>
+                    <li class="cssExpanded">Fully Responsive</li>
+                    <li class="javascript">JavaScript</li>
+                    <li class="html5">HTML5</li>
+                  </ul>
+                </div>
               </div>
             </a>
           </div>
           <div class="projectContainer">
             <a href="http://www.public.asu.edu/~ntrunkey/scoop/newsletter9-15-18.html" target="_blank">
+              <h3>The Scoop Newsletter</h3>
               <div class="project">
-                <img src="images/scoop.png" alt="The Scoop Newsletter Screenshot" class="backgroundImg">
-                <h3>The Scoop Newsletter</h3>
+                <div class="imgContainer">
+                  <img src="images/scoop.png" alt="The Scoop Newsletter Screenshot">
+                </div>
                 <p>
-                  This project included weekly development and strict deadlines
-                  using <span>HTML Email</span> and Mailchimp.
-                </p>
-                <span>
                   The Scoop is a newsletter for current students and alumni from ASU's GIT major.
-                </span>
+                </p>
+                <div class="languages">
+                  <ul>
+                    <li class="css">CSS</li>
+                    <li class="html5">HTML Email</li>
+                    <li class="javascript">Mail Chimp</li>
+                  </ul>
+                </div>
               </div>
             </a>
           </div>
           <div class="projectContainer">
             <a href="https://nicholastrunkey.github.io/doubleT/mockup.html" target="_blank">
+              <h3>Double T</h3>
               <div class="project">
-                <img src="images/doubleT.png" alt="Double T screenshot" class="backgroundImg">
-                <h3>Double T</h3>
+                <div class="imgContainer">
+                  <img src="images/doubleT.png" alt="Double T screenshot">
+                </div>
                 <p>
-                  This project focused on transforming a mock-up into a functioning
-                  website using only <span>HTML and CSS</span>.
-                </p>
-                <span>
                   This was once a school project, made in the early years at ASU. I've recently
                   re-coded this project to bring it up to web standards.
-                </span>
+                </p>
+                <div class="languages">
+                  <ul>
+                    <li class="css">CSS3</li>
+                    <li class="cssExpanded">CSS Grid</li>
+                    <li class="cssExpanded">Fully Responsive</li>
+                    <li class="html5">HTML5</li>
+                  </ul>
+                </div>
               </div>
             </a>
           </div>
@@ -102,22 +143,10 @@
       </section>
     </main>
     <footer>
-      <section class="socialsWrapper">
-        <img class="icon" src="images/baseline-people-24px.svg" alt="">
-        <h2>Find me elsewhere</h2>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/nicholas-trunkey-b1213912a/" target="_blank">
-            <img src="images/linkedinIcon.png" alt="" width="42px">
-          </a>
-          <a href="https://www.behance.net/nicktrunked36d" target="_blank">
-            <img src="images/behanceIcon.png" alt="" width="42px">
-          </a>
-        </div>
-      </section>
-      <a href="mailto:nicktrunkey@gmail.com"><div class="contactButtonFoot">
-        Let's talk, send me an Email
-      </div></a>
-      <small>Handmade by me &copy2019 <a href="mailto:nicktrunkey@gmail.com" target="_blank">Nicholas Trunkey</a></small>
+      <a href="mailto:nicktrunkey@gmail.com" class="contactButtonFoot">let's talk</a>
+      <a href="https://www.linkedin.com/in/nicholas-trunkey-b1213912a/" target="_blank" id="linkedIn">linkedIn</a>
+      <a href="https://www.behance.net/nicktrunked36d" target="_blank" id="behance">behance</a>
+      <p>made with the blood, sweat, and tears of <a href="mailto:nicktrunkey@gmail.com" target="_blank">Nicholas Trunkey</a> &copy2019 </p>
     </footer>
   </body>
 </html>
