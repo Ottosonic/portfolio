@@ -21,7 +21,6 @@
   align-items: baseline;
   grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   grid-gap: 10px;
-  margin-top: 200px;
 }
 .projectContainer {
   margin: 0 auto;
@@ -57,11 +56,15 @@
 .project img {
   width: 100%;
   border-radius: 7px;
-  -webkit-filter: blur(.6px);
-          filter: blur(.6px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+  transition: .3s ease;
+}
+.project img:hover {
+  filter: blur(0px);
 }
 .project p {
   padding: 5px 10px;

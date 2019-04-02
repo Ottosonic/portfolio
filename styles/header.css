@@ -16,7 +16,7 @@ header {
   display: grid;
   grid-template:
   ". a ." 2fr
-  ". b ." 40px
+  ". b ." 50px
   ". c ." 40px
   ". d ." 1fr / 1fr auto 1fr;
 }
@@ -38,9 +38,7 @@ header h2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: b;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: start;
   font-weight: 700;
 }
 header h3 {
